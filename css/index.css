@@ -1,0 +1,445 @@
+body {
+    font-family: 'Play', sans-serif;
+}
+.edge-header {
+    background-color: #f5f5f5;
+}
+.container {
+    border: 1px solid pink;
+    margin: 0 auto;
+    max-width: 915px;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+}
+header div:nth-child(2) {
+    flex: 6;
+}
+header .logo {
+    padding-right: 38px;
+}
+header nav li {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 27px;
+}
+header nav a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #292929;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+header address img {
+    padding-right: 6px;
+}
+header address a {
+    color: #292929;
+    font-family: Play;
+    font-style: normal;
+    font-weight: normal;
+}
+.content {
+    position: relative;
+    max-width: 400px;
+}
+.content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 94px;
+    padding-bottom: 22px;
+    color: #292929;
+}
+.content p {
+    font-size: 21px;
+    font-weight: 400;
+    color: #292929;
+    padding-bottom: 54px;
+}
+.content a {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 18px 41px;
+    border-radius: 100px;
+    background-color: #e01f3d;
+}
+.content::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: url('../assets/images/headphone.png');
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 424px;
+    height: 489px;
+    width: 489px;
+}
+.description {
+    display: flex;
+    align-items: center;
+    margin-top: 92px;
+    padding-bottom: 70px;
+}
+.description .ear {
+    height: 41px;
+    width: 145px;
+    margin-right: 20px;
+}
+.description .ear::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: url('../assets/images/sprites-header.png') -10px -10px;
+    background-repeat: no-repeat;
+    height: 41px;
+    width: 41px;
+}
+.description .battery {
+    height: 41px;
+    width: 145px;
+    margin-right: 20px;
+}
+.description .battery::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: url('../assets/images/sprites-header.png') -71px -10px;
+    background-repeat: no-repeat;
+    height: 41px;
+    width: 41px;
+}
+.description .plug {
+    height: 41px;
+    width: 145px;
+    margin-right: 20px;
+}
+.description .plug::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: url('../assets/images/sprites-header.png') -10px -71px;
+    background-repeat: no-repeat;
+    height: 41px;
+    width: 41px;
+}
+.description p {
+    margin-left: 52px;
+}
+.advantage-header {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 593px;
+    padding-top: 101px;
+    padding-bottom: 62px;
+}
+.advantage h1 {
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 700;
+    color: #292929;
+    padding-bottom: 18px;
+}
+.advantage p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
+.advantage ul {
+    display: flex;
+    justify-content: space-between;
+}
+.advantage li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.advantage li:last-child {
+    padding-right: 0;
+}
+.advantage .icon {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+	height: 128px;
+	background: #f2f5f4;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
+    position: relative;
+}
+.advantage .battery::before {
+    content: '';
+    display: block;
+    width: 60px;
+	height: 60px;
+    background: url('../assets/images/sprites-advantage.png')  -10px -10px;
+    position: absolute;
+}
+.advantage .sound::before {
+    content: '';
+    display: block;
+    width: 53px;
+	height: 47px;
+    background: url('../assets/images/sprites-advantage.png')  -10px -90px;
+    position: absolute;
+}
+.advantage .clock::before {
+    content: '';
+    display: block;
+    width: 58px;
+	height: 60px;
+    background: url('../assets/images/sprites-advantage.png')  -90px -10px;
+    position: absolute;
+}
+.advantage h3 {
+    padding-top: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #292929;
+    padding-bottom: 7px;
+}
+.advantage article {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    max-width: 250px;
+    padding-bottom: 98px;
+}
+
+.advantage .circle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 50px;
+}
+.advantage .circle-small {
+    width: 10px;
+	height: 10px;
+	background: #dadada;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+.advantage .circle-big {
+    width: 20px;
+	height: 20px;
+	background: #dadada;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    margin: 0 5px 0 5px;
+}
+.edge-buying {
+    background-color: #f8faf9;
+}
+.buying ul {
+    display: flex;
+}
+.buying .picture {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+.buying .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #9a9a9a;
+    height: 91px;
+    width: 91px;
+    border-radius: 4px;
+    margin-top: 66px;
+    margin-bottom: 25px;
+}
+.buying .square::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    background: url(../assets/images/gear.png) no-repeat;
+}
+.buying h2 {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    color: #292929;
+    padding-bottom: 24px;
+}
+.buying article {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    padding-bottom: 27px;
+}
+.buying .outline li {
+    padding-right: 86px;
+}
+.buying .outline li:last-child {
+    padding-right: 0;
+}
+.buying .outline title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
+.buying .outline .value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+.buying .total {
+    padding-top: 24px;
+    padding-bottom: 124px;
+}
+.buying .total li {
+    display: flex;
+    align-items: center;
+}
+.buying .total .amount {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 400;
+    color: #151515;
+    padding-right: 13px;
+}
+.buying .total a {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 18px 41px;
+    border-radius: 100px;
+    background-color: #e01f3d;
+}
+
+
+
+
+.team ul {
+    display: flex;
+    justify-content: space-between;
+}
+.team h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    color: #292929; 
+    padding-top: 73px;
+    padding-bottom: 53px;
+}
+.team .people {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    margin-bottom: 142px;
+}
+.team p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #292929;
+}
+.team .triangle {
+    margin-top: 3px;
+    margin-left: 4px;
+    width: 0;
+	height: 0;
+	border-left: 4.5px solid transparent;
+	border-right: 4.5px solid transparent;
+	border-top: 9px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer nav li {
+    display: inline-block;
+}
+footer .icon {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+footer .icon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    transition: .3s;
+}
+footer .icon:hover:after {
+    opacity: 0;
+}
+footer .telegram:after {
+    background: url('../assets/images/sprites-footer.png')  -122px -66px;
+}
+footer .vk:after {
+    background: url('../assets/images/sprites-footer.png')  -10px -122px;
+}
+footer .facebook:after {
+    background: url('../assets/images/sprites-footer.png')  -10px -10px;
+}
+footer .instagram:after {
+    background: url('../assets/images/sprites-footer.png')  -10px -66px;
+}
+footer .icon:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .3s;
+}
+footer .icon:hover:before {
+    opacity: 1;
+}
+footer .telegram:before {
+    background: url('../assets/images/sprites-footer.png')  -122px -10px;
+}
+footer .vk:before {
+    background: url('../assets/images/sprites-footer.png')  -66px -122px;
+}
+footer .facebook:before {
+    background: url('../assets/images/sprites-footer.png')  -66px -10px;
+}
+footer .instagram:before {
+    background: url('../assets/images/sprites-footer.png')  -66px -66px;
+}
