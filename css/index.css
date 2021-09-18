@@ -1,6 +1,11 @@
 body {
     font-family: 'Play', sans-serif;
 }
+.wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+    border: 1px solid black;
+}
 .edge-header {
     background-color: #f5f5f5;
 }
@@ -363,6 +368,246 @@ header address a {
 
 
 
+.edge-colors {
+    background: url(../assets/images/baba.png);
+    height: 652px;
+    background-size: 1500px;
+    background-position-y: center;
+    background-position-x: right;
+    position: relative;
+}
+.colors h1 {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff; 
+    padding-top: 115px;
+    
+}
+.edge-colors .lines {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: rotate(-90deg);
+    height: 102px;
+    width: 652px;
+    right: -73px;
+    bottom: 275px;
+}
+.edge-colors .one {
+    background: #999;
+    padding: 29px 0 30px 34px;
+}
+.edge-colors .two {
+    background: #151515;
+    padding: 29px 0 30px 34px;
+}
+.edge-colors .three {
+    background: #e01f3c;
+    padding: 29px 0 30px 34px;
+}
+.edge-colors h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff; 
+}
+
+
+
+
+
+.review h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 68px;
+    padding-bottom: 32px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #292929;
+}
+.review ul {
+    display: flex;
+    background-color: #F8FAF9;
+    margin-bottom: 15px;
+}
+.review li {
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.review li:nth-child(1) {
+    padding-right: 0;
+}
+.review h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #292929;
+}
+.review article {
+    padding-top: 27px;
+    padding-bottom: 38px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
+.review p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #292929;
+}
+.review .clicker {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 63px;
+}
+.review .users img {
+    height: 74px;
+    width: 74px;
+    border-radius: 50px;
+    margin-right: 6px;
+}
+
+.edge-work {
+    background-color: #F8FAF9;
+}
+.work {
+    text-align: center;
+}
+.work h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 58px;
+    padding-bottom: 44px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #292929;
+}
+.work img {
+    padding-bottom: 106px;
+}
+
+
+
+.edge-delivery {
+    background: #181818;
+}
+.delivery h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 58px;
+    padding-top: 68px;
+}
+.delivery .delivery-form {
+    display: flex;
+}
+.delivery .fio {
+    flex: 1;
+}
+.delivery .comment {
+    flex: 1;
+}
+.delivery .fio .name {
+    display: flex;
+    padding-bottom: 11px;
+}
+.delivery .fio .name .blank {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 17px;
+}
+.delivery .fio .name .blank:last-child {
+    padding-right: 0;
+}
+.delivery .fio p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.delivery .fio .form-fow {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    padding: 18px 0 18px 12px;
+}
+.delivery .fio .street {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 11px;
+}
+/* .delivery .fio .home {
+    display: flex;
+} */
+.delivery .fio .home .blank {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 17px;
+}
+.delivery .fio .home .blank:last-child {
+    padding-right: 0;
+}
+.delivery .comment {
+    display: flex;
+    flex-direction: column;
+    padding-left: 27px;
+}
+.delivery .comment div {
+    display: flex;
+}
+.delivery .comment p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.delivery .comment textarea {
+    padding: 18px 0 18px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    height: 152px;
+}
+.delivery .comment .pay {
+    display: flex;
+    padding-top: 38px;
+    padding-bottom: 19px;
+}
+.delivery .comment .pay p {
+    padding-left: 10px;
+    padding-right: 16px;
+}
+.delivery .comment .call {
+    display: flex;
+    padding-bottom: 48px;
+}
+.delivery .comment .call p {
+    padding-left: 10px;
+}
+.delivery .comment .active-btn {
+    display: flex;
+    align-items: center;
+    padding-bottom: 85px;
+}
+.delivery .comment .btn {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 18px 41px;
+    border-radius: 100px;
+    background-color: #e01f3d;
+}
+.delivery .comment .clear {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 15px;
+}
 
 
 
@@ -370,6 +615,41 @@ header address a {
 
 
 
+
+
+
+
+
+
+
+
+.edge-maps {
+    background: url(../assets/images/map.png) no-repeat;
+    width: 1100px;
+    height: 652px;
+    background-position: center;
+    background-size: cover;
+} 
+
+footer {
+    display: flex;
+}
+footer div div {
+    padding-bottom: 18px;
+}
+footer address {
+    font-size: 18px;
+    font-weight: 400;
+    color: #292929;
+    font-style: normal;
+    padding-top: 20px;
+    padding-bottom: 3px;
+}
+footer a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #292929;
+}
 
 
 
@@ -379,6 +659,7 @@ header address a {
 
 footer nav li {
     display: inline-block;
+    
 }
 footer .icon {
     width: 36px;
