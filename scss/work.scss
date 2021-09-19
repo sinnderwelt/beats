@@ -1,0 +1,31 @@
+body {
+    font-family: 'Play', sans-serif;
+  }
+  
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+    border: 1px solid black;
+  }
+  
+  .edge-work {
+    background-color: #F8FAF9;
+  }
+  
+  .work {
+    text-align: center;
+  
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 58px;
+      padding-bottom: 44px;
+      font-size: 48px;
+      font-weight: 700;
+      color: #292929;
+    }
+  
+    img {
+      padding-bottom: 106px;
+    }
+  }
