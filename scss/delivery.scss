@@ -26,7 +26,16 @@ body {
     .delivery-form {
       display: flex;
     }
-  
+  .delivery-form__col {
+    flex: 1;
+  }
+
+
+
+
+
+
+
     .fio, .comment {
       flex: 1;
     }

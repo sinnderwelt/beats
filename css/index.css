@@ -3,8 +3,12 @@ body {
 }
 .wrapper {
     margin: 0 auto;
-    max-width: 1100px;
     border: 1px solid black;
+}
+section {
+    display: flex;
+    height: 100vh;
+    min-height: 652px;
 }
 .edge-header {
     background-color: #f5f5f5;
@@ -12,7 +16,9 @@ body {
 .container {
     border: 1px solid pink;
     margin: 0 auto;
-    max-width: 915px;
+    max-width: 940px;
+    display: flex;
+    flex-direction: column;
 }
 header {
     display: flex;
@@ -20,7 +26,10 @@ header {
     padding-top: 24px;
 }
 header div:nth-child(2) {
-    flex: 6;
+    flex: 7;
+}
+header div:nth-child(3) {
+    flex: 2;
 }
 header .logo {
     padding-right: 38px;
@@ -28,7 +37,7 @@ header .logo {
 header nav li {
     display: inline-block;
     vertical-align: middle;
-    padding-right: 27px;
+    padding-right: 24px;
 }
 header nav a {
     font-size: 18px;
@@ -37,38 +46,44 @@ header nav a {
     font-family: 'Alegreya Sans', sans-serif;
 }
 header address img {
-    padding-right: 6px;
+    padding-left: 17px;
+    padding-right: 2px;
+    max-width: 100%;
 }
 header address a {
     color: #292929;
     font-family: Play;
     font-style: normal;
     font-weight: normal;
+    font-size: 18px;
+    font-weight: 400;
 }
 .content {
     position: relative;
-    max-width: 400px;
 }
 .content h1 {
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-top: 94px;
-    padding-bottom: 22px;
+    padding-top: 85px;
+    padding-bottom: 16px;
+    padding-right: 500px;
     color: #292929;
 }
 .content p {
     font-size: 21px;
     font-weight: 400;
     color: #292929;
-    padding-bottom: 54px;
+    padding-bottom: 53px;
+    padding-right: 600px;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 .content a {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    padding: 18px 41px;
+    padding: 16px 36px;
     border-radius: 100px;
     background-color: #e01f3d;
 }
@@ -79,20 +94,20 @@ header address a {
     background: url('../assets/images/headphone.png');
     background-repeat: no-repeat;
     top: 40px;
-    left: 424px;
+    left: 431px;
     height: 489px;
     width: 489px;
 }
 .description {
     display: flex;
     align-items: center;
-    margin-top: 92px;
+    margin-top: 87px;
     padding-bottom: 70px;
 }
 .description .ear {
     height: 41px;
     width: 145px;
-    margin-right: 20px;
+    margin-right: 29px;
 }
 .description .ear::before {
     content: '';
@@ -102,11 +117,12 @@ header address a {
     background-repeat: no-repeat;
     height: 41px;
     width: 41px;
+    max-width: 100%;
 }
 .description .battery {
     height: 41px;
     width: 145px;
-    margin-right: 20px;
+    margin-right: 38px;
 }
 .description .battery::before {
     content: '';
@@ -116,6 +132,7 @@ header address a {
     background-repeat: no-repeat;
     height: 41px;
     width: 41px;
+    max-width: 100%;
 }
 .description .plug {
     height: 41px;
@@ -130,20 +147,28 @@ header address a {
     background-repeat: no-repeat;
     height: 41px;
     width: 41px;
+    max-width: 100%;
 }
 .description p {
-    margin-left: 52px;
+    margin-left: 47px;
+}
+.container-center {
+    display: flex;
+    justify-content: center;
+}
+.advantage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .advantage-header {
     text-align: center;
     margin: 0 auto;
     max-width: 593px;
-    padding-top: 101px;
-    padding-bottom: 62px;
 }
 .advantage h1 {
     text-transform: uppercase;
-    font-size: 42px;
+    font-size: 48px;
     font-weight: 700;
     color: #292929;
     padding-bottom: 18px;
@@ -152,6 +177,7 @@ header address a {
     font-size: 16px;
     font-weight: 400;
     color: #666;
+    padding-bottom: 62px;
 }
 .advantage ul {
     display: flex;
@@ -186,6 +212,7 @@ header address a {
 	height: 60px;
     background: url('../assets/images/sprites-advantage.png')  -10px -10px;
     position: absolute;
+    max-width: 100%;
 }
 .advantage .sound::before {
     content: '';
@@ -194,6 +221,7 @@ header address a {
 	height: 47px;
     background: url('../assets/images/sprites-advantage.png')  -10px -90px;
     position: absolute;
+    max-width: 100%;
 }
 .advantage .clock::before {
     content: '';
@@ -202,22 +230,21 @@ header address a {
 	height: 60px;
     background: url('../assets/images/sprites-advantage.png')  -90px -10px;
     position: absolute;
+    max-width: 100%;
 }
 .advantage h3 {
-    padding-top: 24px;
     font-size: 24px;
     font-weight: 700;
     color: #292929;
+    padding-top: 24px;
     padding-bottom: 7px;
 }
 .advantage article {
     font-size: 16px;
     font-weight: 400;
-    color: #666;
-    max-width: 250px;
-    padding-bottom: 98px;
+    color: #666;  
+    padding: 0 12px 0 12px;
 }
-
 .advantage .circle {
     display: flex;
     flex-direction: row;
@@ -241,186 +268,13 @@ header address a {
 	border-radius: 50px;
     margin: 0 5px 0 5px;
 }
-.edge-buying {
-    background-color: #f8faf9;
-}
-.buying ul {
+.advantage .card {
     display: flex;
+    flex: 1;
 }
-.buying .picture {
-    display: flex;
-    align-items: center;
-    padding-right: 40px;
-}
-.buying .square {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background-color: #9a9a9a;
-    height: 91px;
-    width: 91px;
-    border-radius: 4px;
-    margin-top: 66px;
-    margin-bottom: 25px;
-}
-.buying .square::before {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 42px;
-    width: 42px;
-    background: url(../assets/images/gear.png) no-repeat;
-}
-.buying h2 {
-    text-transform: uppercase;
-    font-size: 36px;
-    font-weight: 700;
-    color: #292929;
-    padding-bottom: 24px;
-}
-.buying article {
-    font-size: 16px;
-    font-weight: 400;
-    color: #666;
-    padding-bottom: 27px;
-}
-.buying .outline li {
-    padding-right: 86px;
-}
-.buying .outline li:last-child {
-    padding-right: 0;
-}
-.buying .outline title {
-    font-size: 16px;
-    font-weight: 400;
-    color: #666;
-}
-.buying .outline .value {
-    font-size: 18px;
-    font-weight: 700;
-    color: #000;
-}
-.buying .total {
-    padding-top: 24px;
-    padding-bottom: 124px;
-}
-.buying .total li {
-    display: flex;
-    align-items: center;
-}
-.buying .total .amount {
-    text-transform: uppercase;
-    font-size: 36px;
-    font-weight: 400;
-    color: #151515;
-    padding-right: 13px;
-}
-.buying .total a {
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 18px 41px;
-    border-radius: 100px;
-    background-color: #e01f3d;
-}
-
-
-
-
-.team ul {
-    display: flex;
-    justify-content: space-between;
-}
-.team h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 48px;
-    font-weight: 700;
-    color: #292929; 
-    padding-top: 73px;
-    padding-bottom: 53px;
-}
-.team .people {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 25px;
-    margin-bottom: 142px;
-}
-.team p {
-    font-size: 18px;
-    font-weight: 700;
-    color: #292929;
-}
-.team .triangle {
-    margin-top: 3px;
-    margin-left: 4px;
-    width: 0;
-	height: 0;
-	border-left: 4.5px solid transparent;
-	border-right: 4.5px solid transparent;
-	border-top: 9px solid red;
-}
-
-
-
-
-
-.edge-colors {
-    background: url(../assets/images/baba.png);
-    height: 652px;
-    background-size: 1500px;
-    background-position-y: center;
-    background-position-x: right;
-    position: relative;
-}
-.colors h1 {
-    text-transform: uppercase;
-    font-size: 48px;
-    font-weight: 700;
-    color: #fff; 
-    padding-top: 115px;
-    
-}
-.edge-colors .lines {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    transform: rotate(-90deg);
-    height: 102px;
-    width: 652px;
-    right: -73px;
-    bottom: 275px;
-}
-.edge-colors .one {
-    background: #999;
-    padding: 29px 0 30px 34px;
-}
-.edge-colors .two {
-    background: #151515;
-    padding: 29px 0 30px 34px;
-}
-.edge-colors .three {
-    background: #e01f3c;
-    padding: 29px 0 30px 34px;
-}
-.edge-colors h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff; 
-}
-
-
-
-
-
 .review h1 {
     text-transform: uppercase;
     text-align: center;
-    padding-top: 68px;
     padding-bottom: 32px;
     font-size: 48px;
     font-weight: 700;
@@ -448,6 +302,7 @@ header address a {
 .review article {
     padding-top: 27px;
     padding-bottom: 38px;
+    padding-right: 100px;
     font-size: 16px;
     font-weight: 400;
     color: #666;
@@ -460,7 +315,6 @@ header address a {
 .review .clicker {
     display: flex;
     justify-content: center;
-    padding-bottom: 63px;
 }
 .review .users img {
     height: 74px;
@@ -468,30 +322,9 @@ header address a {
     border-radius: 50px;
     margin-right: 6px;
 }
-
-.edge-work {
-    background-color: #F8FAF9;
-}
-.work {
-    text-align: center;
-}
-.work h1 {
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 58px;
-    padding-bottom: 44px;
-    font-size: 48px;
-    font-weight: 700;
-    color: #292929;
-}
-.work img {
-    padding-bottom: 106px;
-}
-
-
-
 .edge-delivery {
-    background: #181818;
+    background: url(../assets/images/form-background.png) no-repeat;
+    background-size: cover;
 }
 .delivery h1 {
     font-size: 48px;
@@ -499,228 +332,86 @@ header address a {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 58px;
-    padding-top: 68px;
+    padding-bottom: 45px;
 }
 .delivery .delivery-form {
     display: flex;
 }
-.delivery .fio {
-    flex: 1;
-}
-.delivery .comment {
-    flex: 1;
-}
-.delivery .fio .name {
+.delivery-form__row {
     display: flex;
-    padding-bottom: 11px;
 }
-.delivery .fio .name .blank {
-    display: flex;
-    flex-direction: column;
+.delivery-form__label {
     flex: 1;
-    padding-right: 17px;
+    margin-right: 17px;
 }
-.delivery .fio .name .blank:last-child {
-    padding-right: 0;
+.delivery-form__label:last-child {
+    margin-right: 0;
 }
-.delivery .fio p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-}
-.delivery .fio .form-fow {
+.delivery-form__input {
+    width: 100%;
     font-size: 14px;
     font-weight: 400;
     color: #000;
     padding: 18px 0 18px 12px;
+    border-radius: 4px;
 }
-.delivery .fio .street {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 11px;
-}
-/* .delivery .fio .home {
-    display: flex;
-} */
-.delivery .fio .home .blank {
-    display: flex;
-    flex-direction: column;
+.delivery-form__col {
     flex: 1;
-    padding-right: 17px;
+    margin-right: 27px;
 }
-.delivery .fio .home .blank:last-child {
-    padding-right: 0;
+.delivery-form__col:last-child {
+    margin-right: 0;
 }
-.delivery .comment {
-    display: flex;
-    flex-direction: column;
-    padding-left: 27px;
-}
-.delivery .comment div {
-    display: flex;
-}
-.delivery .comment p {
+.delivery-form__name {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
+    padding-bottom: 6px;
+    padding-top: 11px;
 }
-.delivery .comment textarea {
-    padding: 18px 0 18px 12px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000;
-    height: 152px;
-}
-.delivery .comment .pay {
+.delivery .pay {
     display: flex;
     padding-top: 38px;
     padding-bottom: 19px;
 }
-.delivery .comment .pay p {
+.delivery .pay p {
     padding-left: 10px;
     padding-right: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
 }
-.delivery .comment .call {
+.delivery .call {
     display: flex;
     padding-bottom: 48px;
 }
-.delivery .comment .call p {
+.delivery .call p {
     padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
 }
-.delivery .comment .active-btn {
+.delivery .active-btn {
     display: flex;
     align-items: center;
-    padding-bottom: 85px;
 }
-.delivery .comment .btn {
+.delivery .btn {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    padding: 18px 41px;
+    padding: 18px 35px;
     border-radius: 100px;
     background-color: #e01f3d;
+    border: none;
+    cursor: pointer;
 }
-.delivery .comment .clear {
+.delivery .clear {
     font-size: 16px;
     font-weight: 400;
     color: #fff;
     padding-left: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.edge-maps {
-    background: url(../assets/images/map.png) no-repeat;
-    width: 1100px;
-    height: 652px;
-    background-position: center;
-    background-size: cover;
-} 
-
-footer {
-    display: flex;
-}
-footer div div {
-    padding-bottom: 18px;
-}
-footer address {
-    font-size: 18px;
-    font-weight: 400;
-    color: #292929;
-    font-style: normal;
-    padding-top: 20px;
-    padding-bottom: 3px;
-}
-footer a {
-    font-size: 18px;
-    font-weight: 400;
-    color: #292929;
-}
-
-
-
-
-
-
-
-footer nav li {
-    display: inline-block;
-    
-}
-footer .icon {
-    width: 36px;
-    height: 36px;
-    padding: 0;
-    border-radius: 50%;
-    position: relative;
-    margin-right: 10px;
+    background: transparent;
+    border: none;
     cursor: pointer;
-}
-footer .icon:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 36px;
-    height: 36px;
-    transition: .3s;
-}
-footer .icon:hover:after {
-    opacity: 0;
-}
-footer .telegram:after {
-    background: url('../assets/images/sprites-footer.png')  -122px -66px;
-}
-footer .vk:after {
-    background: url('../assets/images/sprites-footer.png')  -10px -122px;
-}
-footer .facebook:after {
-    background: url('../assets/images/sprites-footer.png')  -10px -10px;
-}
-footer .instagram:after {
-    background: url('../assets/images/sprites-footer.png')  -10px -66px;
-}
-footer .icon:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    opacity: 0;
-    transition: .3s;
-}
-footer .icon:hover:before {
-    opacity: 1;
-}
-footer .telegram:before {
-    background: url('../assets/images/sprites-footer.png')  -122px -10px;
-}
-footer .vk:before {
-    background: url('../assets/images/sprites-footer.png')  -66px -122px;
-}
-footer .facebook:before {
-    background: url('../assets/images/sprites-footer.png')  -66px -10px;
-}
-footer .instagram:before {
-    background: url('../assets/images/sprites-footer.png')  -66px -66px;
 }
