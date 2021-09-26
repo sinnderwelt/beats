@@ -1,0 +1,142 @@
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+
+    @include phones {
+      flex-direction: column;
+    }
+  
+    .footer-content {
+      margin-left: 86px;
+
+      @include phones {
+        margin-left: 0;
+        text-align: center;
+      }
+
+      div {
+        padding-bottom: 18px;
+      }
+    }
+  
+    address {
+      font-size: 18px;
+      font-weight: 400;
+      color: #292929;
+      font-style: normal;
+      padding-top: 20px;
+      padding-bottom: 3px;
+
+      @include phones {
+        padding-bottom: 12px;
+      }
+    }
+  
+    a {
+      font-size: 18px;
+      font-weight: 400;
+      color: #292929;
+    }
+
+  .footer-sprite {
+      margin-right: 54px;
+    nav ul {
+      @include tablets {
+        display: flex;
+        
+      }
+    }
+      nav li {
+        display: inline-block;
+      }
+    
+      .icon {
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        border-radius: 50%;
+        position: relative;
+        margin-right: 10px;
+        cursor: pointer;
+
+        @include phones {
+          margin-bottom: 31px;
+        }
+    
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 36px;
+          height: 36px;
+          transition: .3s;
+        }
+    
+        &:hover:after {
+          opacity: 0;
+        }
+      }
+    }
+  
+    .telegram:after {
+      background: url('../assets/images/sprites-footer.png') -122px -66px;
+    }
+  
+    .vk:after {
+      background: url('../assets/images/sprites-footer.png') -10px -122px;
+    }
+  
+    .facebook:after {
+      background: url('../assets/images/sprites-footer.png') -10px -10px;
+    }
+  
+    .instagram:after {
+      background: url('../assets/images/sprites-footer.png') -10px -66px;
+    }
+  
+    .icon {
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        opacity: 0;
+        transition: .3s;
+
+      }
+  
+      &:hover:before {
+        opacity: 1;
+      }
+    }
+  
+    .telegram:before {
+      background: url('../assets/images/sprites-footer.png') -122px -10px;
+    }
+  
+    .vk:before {
+      background: url('../assets/images/sprites-footer.png') -66px -122px;
+    }
+  
+    .facebook:before {
+      background: url('../assets/images/sprites-footer.png') -66px -10px;
+    }
+  
+    .instagram:before {
+      background: url('../assets/images/sprites-footer.png') -66px -66px;
+    }
+  }

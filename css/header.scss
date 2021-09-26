@@ -1,0 +1,484 @@
+  html {
+    font-size: 16px;
+
+    @include tablets {
+      font-size: 13px;
+    }
+
+    @include phones {
+      font-size: 12px;
+    }
+  }
+  
+  body {
+    font-family: 'Play', sans-serif;
+  }
+  
+  .wrapper {
+    margin: 0 auto;
+    min-width: 0px;
+    overflow: hidden;
+  }
+  
+  section {
+    display: flex;
+    height: 100vh;
+    min-height: 652px;
+    justify-content: center;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 940px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    margin-left: 5px;
+    justify-content: space-around;
+
+    @include tablets {
+      max-width: 724px;
+    }
+  }
+  
+  .container-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .edge-header {
+    background-color: $white;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  
+    div {
+      &:nth-child(2) {
+        flex: 7;
+      }
+  
+      &:nth-child(3) {
+        flex: 2;
+      }
+    }
+  
+    .logo {
+      padding-right: 38px;
+    }
+  
+    nav {
+      ul {
+        text-align: center;
+
+        @include tablets {
+          display: none;
+        }
+      }
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 24px;
+      }
+  
+      a {
+        font-size: 18px;
+        font-weight: 400;
+        color: $black;
+        font-family: 'Alegreya Sans', sans-serif;
+      }
+    }
+  
+    address {
+      img {
+        padding-left: 17px;
+        padding-right: 2px;
+        max-width: 100%;
+      }
+  
+      a {
+        color: $black;
+        font-family: Play;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        font-weight: 400;
+        white-space: nowrap;
+      }
+
+      @include tablets {
+        display: none;
+      }
+    }
+  }
+  
+  .content {
+    position: relative;
+    
+    div {
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 1;
+    }
+    
+  }
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 85px;
+      padding-bottom: 16px;
+      width: 50%;
+      color: $black;
+
+      @include tablets {
+        padding: 0 37px 0 37px;
+        text-align: center;
+        width: 100%;
+        font-size: 38px;
+
+      }
+    }
+  
+    p {
+      font-size: 21px;
+      font-weight: 400;
+      color: $black;
+      padding-bottom: 53px;
+      width: 35%;
+      font-family: 'Alegreya Sans', sans-serif;
+
+      @include tablets {
+        padding: 0 35px 0 35px;
+        text-align: center;
+        width: 100%;
+        font-size: 18px;
+        padding-bottom: 25px;
+      }
+    }
+  
+    a {
+      @include btn;
+
+    }
+    
+    &::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      background: url('../assets/images/headphone.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 40px;
+      right: 0;
+      height: 489px;
+      max-width: 489px;
+      width: 52%;
+
+      @include tablets {
+        position: static;  
+        max-height: 270px;
+        min-height: 67%;     
+      }
+
+      @include phones {
+        width: 80%;
+      }
+    }
+
+    @include tablets {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;  
+    }
+  }
+  
+  .description {
+    display: flex;
+    align-items: center;
+    margin-top: 87px;
+  
+    .ear {
+      height: 41px;
+      width: 145px;
+      margin-right: 29px;
+  
+      &::before {
+        @include description-icon;
+        background: url('../assets/images/sprites-header.png') -10px -10px;
+      }
+    }
+  
+    .battery {
+      height: 41px;
+      width: 145px;
+      margin-right: 38px;
+  
+      &::before {
+        @include description-icon;
+        background: url('../assets/images/sprites-header.png') -71px -10px;
+      }
+    }
+  
+    .plug {
+      height: 41px;
+      width: 145px;
+      margin-right: 20px;
+  
+      &::before {
+        @include description-icon;
+        background: url('../assets/images/sprites-header.png') -10px -71px;
+      }
+    }
+  
+    p {
+      margin-left: 47px;
+    }
+
+    @include tablets {
+      display: none;
+    }
+  }
+  .point {
+    position: relative;
+    margin-left: 15px;
+    margin-top: 300px;
+    z-index: $z-point;
+
+    @include tablets {
+      display: none;
+    }
+
+    li {
+      margin-bottom: 5px;
+      position: relative;
+
+      &::before {
+        content: "";
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: $black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      a {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        display: block;
+
+        &.active {
+          border-color: $red;
+        }
+      }
+    }
+  }
+
+
+
+
+
+  // @media (max-width: 768px) {
+    // html {
+    //   font-size: 13px;
+    // }
+  
+    // .container {
+    //   max-width: 724px;
+    // }
+    // header {
+    //   ul {
+    //     display: none;
+    //   }
+    //   // address {
+      //   display: none;
+      // }
+      // .menu {
+      //   display: block;
+      // }
+    // }
+    // .content {
+    //   text-align: center;
+
+        // h1 {
+        //   padding-right: 0;
+        // }
+        // p {
+        //   padding-right: 0;
+    //     // }
+    // }
+    // .description {
+    //   display: none;
+    // }
+    // .advantage {
+    //   // h1 {
+    //   //   padding-bottom: 11px !important;
+    //   // }
+    //   // p {
+    //   //   padding-bottom: 52px !important;
+    //   // }
+    //   // .circle {
+    //   //   display: none !important;
+    //   // }
+    //   // h3 {
+    //   //   font-size: 23px !important;
+    //   //   padding-bottom: 18px !important;
+    //   // }
+    //   // article {
+    //   //   padding: 0 9px 0 9px !important;
+    //   // }
+    // }
+    // .review {
+    //   // ul {
+    //   //   // flex-direction: column;
+    //   //   margin-bottom: 32px !important;
+    //   // }
+  
+    //   // li {
+    //   //   padding: 0 !important;
+    //   //   align-items: center;
+    //   // }
+  
+    //   // ul img {
+    //   //   height: 130px;
+    //   //   width: 130px;
+    //   //   margin-top: 56px;
+    //   //   margin-bottom: 32px;
+    //   // }
+  
+    //   // h3 {
+    //     // font-size: 24px ;
+    //   // }
+  
+    //   // article {
+    //   //   text-align: center;
+    //   //   padding-right: 0 !important;
+    //   //   margin: 0 24px 0 24px;
+    //   //   font-size: 16px !important;
+    //   // }
+  
+    //   // p {
+    //   //   padding-bottom: 30px;
+    //   //   font-size: 16px !important;
+    //   // }
+    // }
+  //   .delivery {
+  //     // h1 {
+  //     //   font-size: 48px !important;
+  //     //   padding-bottom: 30px !important;
+  //     // }
+  //     // .delivery-form {
+  //     //   flex-direction: column;
+  //     //   max-width: 468px;
+  //     //   margin: 0 auto;
+  //     // }
+  //     // .delivery-form__col {
+  //     //   margin-right: 0;
+  //     // }
+  //     // .delivery-form__input {
+  //     //   padding: 8px 0 8px 10px;
+  //     // }
+  //     // .pay p {
+  //     //   font-size: 16px !important;
+  //     // }
+  //     // .call p {
+  //     //   font-size: 16px !important;
+  //     // }
+  //     .active-btn {
+  //      justify-content: center;
+  //     }
+  //     .btn {
+  //       font-size: 16px !important;
+  //       padding: 21px 41px !important;
+  //     }
+  //     .clear {
+  //       color: $red !important;
+  //     }
+  //   }
+  // }
+  
+  // @media (max-width: 480px) {
+    // html {
+    //   font-size: 12px;
+    // }
+    // .advantage {
+    //   h1 {
+    //     font-size: 32px !important;
+    //   }
+      // ul {
+      //   flex-direction: column;
+      //   padding: 0 10px 0 10px;
+      // }
+      // .card {
+      //   flex-direction: row;
+      //   padding-bottom: 31px;
+        
+      //   &:last-child {
+      //     padding-bottom: 0;
+      //   }
+      // }
+      // .texting {
+      //   flex: 1;
+      //   text-align: left;
+      // }
+      // h3 {
+      //   padding-top: 0 !important;
+      //   font-size: 24px !important;
+      //   padding-left: 12px;
+      // }
+      // article {
+      //   padding: 0 12px 0 10px !important;
+      // }
+    // }
+    // .review {
+      // ul {
+      //   margin-bottom: 44px !important;
+      // }
+  
+      // h1 {
+      //   font-style: 32px;
+      // }
+  
+      // ul img {
+      //   margin-bottom: 21px;
+      // }
+  
+      // article {
+      //   padding-top: 12px !important;
+      //   padding-bottom: 12px !important;
+      //   margin: 0 37px 0 37px;
+      // }
+  
+    //   p {
+    //     font-size: 18px !important;
+    //     padding: 0 0 20px 0;
+    //   }
+    // }
+    // .delivery {
+      // h1 {
+      //   font-size: 32px !important;
+      //   padding-bottom: 39px !important;
+      // }
+      // .delivery-form {
+      //   padding: 0 10px 0 10px;
+      // }
+      // .delivery-form__name {
+      //   font-size: 16px !important;
+      // }
+    //   .pay {
+    //     justify-content: center;
+    //   }
+    //   .call {
+    //     justify-content: center;
+    //   }
+    // }
+  // }

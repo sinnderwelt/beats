@@ -1,0 +1,226 @@
+
+.edge-advantage {
+  position: relative;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 46px;
+    height: 10px;
+    background: #c4c4c4;
+    transform: rotate(-45deg);
+    right: 350px;
+  }
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    transform: rotate(-15deg);
+    left: 200px;
+    bottom: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid red;
+  }
+  
+}
+
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantage-header {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 37.063rem;
+}
+
+.advantage {
+  h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $black;
+    padding-bottom: 1.125rem;
+
+    @include tablets {
+      padding-bottom: 11px;
+    }
+
+    @include phones {
+      font-size: 32px;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $gray;
+    padding-bottom: 3.875rem;
+
+    @include tablets {
+      padding-bottom: 52px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    @include phones {
+      flex-direction: column;
+      padding: 0 10px 0 10px;
+    }
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  .icon {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    background: #f2f5f4;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .battery::before {
+    @include advantage-icon;
+    width: 3.75rem;
+    height: 3.75rem;
+    background: url('../assets/images/sprites-advantage.png') -10px -10px;
+  
+    @include tablets {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .sound::before {
+    @include advantage-icon;
+    width: 3.313rem;
+    height: 2.938rem;
+    background: url('../assets/images/sprites-advantage.png') -10px -90px;
+  
+    @include tablets {
+      width: 4.45rem;
+      height: 3.85rem;
+    }
+  
+  }
+
+  .clock::before {
+    @include advantage-icon;
+    width: 3.688rem;
+    height: 3.75rem;
+    background: url('../assets/images/sprites-advantage.png') -90px -10px;
+  
+    @include tablets {
+      width: 4.7rem;
+      height: 5.1rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $black;
+    padding-top: 1.5rem;
+    padding-bottom: 0.438rem;
+
+    @include tablets {
+      font-size: 23px;
+      padding-bottom: 18px;
+    }
+
+    @include phones {
+      padding-top: 0;
+      font-size: 24px;
+      padding-left: 12px;
+    }
+  }
+
+  article {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $gray;
+    padding: 0 0.75rem 0 0.75rem;
+
+    @include tablets {
+      padding: 0 9px 0 9px;
+    }
+
+    @include phones {
+      padding: 0 12px 0 10px;
+    }
+  }
+
+  .circle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3.125rem;
+
+    @include tablets {
+      display: none;
+    }
+  }
+
+  .circle-small {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: #dadada;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+  }
+
+  .circle-big {
+    width: 1.25rem;
+    height: 1.25rem;
+    background: #dadada;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin: 0 0.313rem 0 0.313rem;
+  }
+
+  .card {
+    display: flex;
+    flex: 1;
+
+    @include phones {
+      flex-direction: row;
+      padding-bottom: 31px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+  .texting {
+    @include phones {
+      flex: 1;
+      text-align: left;
+    }
+  }
+}

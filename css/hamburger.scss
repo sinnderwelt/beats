@@ -1,0 +1,18 @@
+.hamburger {
+    width: 29px;
+    height: 26px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+
+    @include tablets {
+        display: inline-flex;
+    }
+
+    & span {
+        display: block;
+        background: $black;
+        height: 4px;
+        border-radius: 10px;
+    }
+}
