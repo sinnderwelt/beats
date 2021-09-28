@@ -1,15 +1,15 @@
 @import url("../css/normalize.css");
 html {
-  font-size: 16px;
+  font-size: 1rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   html {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   html {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
@@ -19,7 +19,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  min-width: 0px;
+  min-width: 0rem;
   overflow: hidden;
 }
 
@@ -28,7 +28,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  min-height: 652px;
+  min-height: 40.75rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -37,7 +37,7 @@ section {
 .container {
   margin: 0 auto;
   width: 95%;
-  max-width: 940px;
+  max-width: 58.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,14 +45,14 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 0.3125rem;
+  margin-left: 0.3125rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .container {
-    max-width: 724px;
+    max-width: 45.25rem;
   }
 }
 
@@ -88,12 +88,12 @@ header div:nth-child(3) {
           flex: 2;
 }
 header .logo {
-  padding-right: 38px;
+  padding-right: 2.375rem;
 }
 header nav ul {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   header nav ul {
     display: none;
   }
@@ -101,17 +101,17 @@ header nav ul {
 header nav li {
   display: inline-block;
   vertical-align: middle;
-  padding-right: 24px;
+  padding-right: 1.5rem;
 }
 header nav a {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   color: #292929;
   font-family: "Alegreya Sans", sans-serif;
 }
 header address img {
-  padding-left: 17px;
-  padding-right: 2px;
+  padding-left: 1.0625rem;
+  padding-right: 0.125rem;
   max-width: 100%;
 }
 header address a {
@@ -119,11 +119,11 @@ header address a {
   font-family: Play;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   white-space: nowrap;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   header address {
     display: none;
   }
@@ -132,7 +132,7 @@ header address a {
 .content {
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .content div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -148,46 +148,46 @@ header address a {
   }
 }
 .content h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 85px;
-  padding-bottom: 16px;
+  padding-top: 5.3125rem;
+  padding-bottom: 1rem;
   width: 50%;
   color: #292929;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .content h1 {
-    padding: 0 37px 0 37px;
+    padding: 0 2.3125rem 0 2.3125rem;
     text-align: center;
     width: 100%;
-    font-size: 38px;
+    font-size: 2.375rem;
   }
 }
 .content p {
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 400;
   color: #292929;
-  padding-bottom: 53px;
+  padding-bottom: 3.3125rem;
   width: 35%;
   font-family: "Alegreya Sans", sans-serif;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .content p {
-    padding: 0 35px 0 35px;
+    padding: 0 2.1875rem 0 2.1875rem;
     text-align: center;
     width: 100%;
-    font-size: 18px;
-    padding-bottom: 25px;
+    font-size: 1.125rem;
+    padding-bottom: 1.5625rem;
   }
 }
 .content a {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  padding: 16px 36px;
-  border-radius: 100px;
+  padding: 1rem 2.25rem;
+  border-radius: 6.25rem;
   background-color: #e01f3d;
 }
 .content::after {
@@ -197,25 +197,25 @@ header address a {
   background: url("../assets/images/headphone.png");
   background-repeat: no-repeat;
   background-size: contain;
-  top: 40px;
+  top: 2.5rem;
   right: 0;
-  height: 489px;
-  max-width: 489px;
+  height: 30.5625rem;
+  max-width: 30.5625rem;
   width: 52%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .content::after {
     position: static;
-    max-height: 270px;
+    max-height: 16.875rem;
     min-height: 67%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .content::after {
     width: 80%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -237,57 +237,57 @@ header address a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 87px;
+  margin-top: 5.4375rem;
 }
 .description .ear {
-  height: 41px;
-  width: 145px;
-  margin-right: 29px;
+  height: 2.5625rem;
+  width: 9.0625rem;
+  margin-right: 1.8125rem;
 }
 .description .ear::before {
   content: "";
   display: inline-block;
   position: absolute;
   background-repeat: no-repeat;
-  height: 41px;
-  width: 41px;
+  height: 2.5625rem;
+  width: 2.5625rem;
   max-width: 100%;
-  background: url("../assets/images/sprites-header.png") -10px -10px;
+  background: url("../assets/images/sprites-header.png") -0.625rem -0.625rem;
 }
 .description .battery {
-  height: 41px;
-  width: 145px;
-  margin-right: 38px;
+  height: 2.5625rem;
+  width: 9.0625rem;
+  margin-right: 2.375rem;
 }
 .description .battery::before {
   content: "";
   display: inline-block;
   position: absolute;
   background-repeat: no-repeat;
-  height: 41px;
-  width: 41px;
+  height: 2.5625rem;
+  width: 2.5625rem;
   max-width: 100%;
-  background: url("../assets/images/sprites-header.png") -71px -10px;
+  background: url("../assets/images/sprites-header.png") -4.4375rem -0.625rem;
 }
 .description .plug {
-  height: 41px;
-  width: 145px;
-  margin-right: 20px;
+  height: 2.5625rem;
+  width: 9.0625rem;
+  margin-right: 1.25rem;
 }
 .description .plug::before {
   content: "";
   display: inline-block;
   position: absolute;
   background-repeat: no-repeat;
-  height: 41px;
-  width: 41px;
+  height: 2.5625rem;
+  width: 2.5625rem;
   max-width: 100%;
-  background: url("../assets/images/sprites-header.png") -10px -71px;
+  background: url("../assets/images/sprites-header.png") -0.625rem -4.4375rem;
 }
 .description p {
-  margin-left: 47px;
+  margin-left: 2.9375rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .description {
     display: none;
   }
@@ -295,23 +295,23 @@ header address a {
 
 .point {
   position: relative;
-  margin-left: 15px;
-  margin-top: 300px;
+  margin-left: 0.9375rem;
+  margin-top: 18.75rem;
   z-index: 100;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .point {
     display: none;
   }
 }
 .point li {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   position: relative;
 }
 .point li::before {
   content: "";
-  height: 6px;
-  width: 6px;
+  height: 0.375rem;
+  width: 0.375rem;
   border-radius: 50%;
   background: #292929;
   position: absolute;
@@ -321,10 +321,10 @@ header address a {
           transform: translate(-50%, -50%);
 }
 .point li a {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
   display: block;
 }
 .point li a.active {
@@ -332,8 +332,8 @@ header address a {
 }
 
 .hamburger {
-  width: 29px;
-  height: 26px;
+  width: 1.8125rem;
+  height: 1.625rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -343,7 +343,7 @@ header address a {
           justify-content: space-between;
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .hamburger {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -353,8 +353,8 @@ header address a {
 .hamburger span {
   display: block;
   background: #292929;
-  height: 4px;
-  border-radius: 10px;
+  height: 0.25rem;
+  border-radius: 0.625rem;
 }
 
 .edge-advantage {
@@ -364,12 +364,12 @@ header address a {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 46px;
-  height: 10px;
+  width: 2.875rem;
+  height: 0.625rem;
   background: #c4c4c4;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  right: 350px;
+  right: 21.875rem;
 }
 .edge-advantage::before {
   content: "";
@@ -377,12 +377,12 @@ header address a {
   position: absolute;
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
-  left: 200px;
+  left: 12.5rem;
   bottom: 0;
   height: 0;
-  border-left: 25px solid transparent;
-  border-right: 30px solid transparent;
-  border-bottom: 30px solid red;
+  border-left: 1.5625rem solid transparent;
+  border-right: 1.875rem solid transparent;
+  border-bottom: 1.875rem solid red;
 }
 
 .advantage {
@@ -411,14 +411,14 @@ header address a {
   color: #292929;
   padding-bottom: 1.125rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .advantage h1 {
-    padding-bottom: 11px;
+    padding-bottom: 0.6875rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .advantage h1 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 }
 .advantage p {
@@ -427,9 +427,9 @@ header address a {
   color: #666;
   padding-bottom: 3.875rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .advantage p {
-    padding-bottom: 52px;
+    padding-bottom: 3.25rem;
   }
 }
 .advantage ul {
@@ -440,13 +440,13 @@ header address a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .advantage ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0 10px 0 10px;
+    padding: 0 0.625rem 0 0.625rem;
   }
 }
 .advantage li {
@@ -489,9 +489,9 @@ header address a {
   max-width: 100%;
   width: 3.75rem;
   height: 3.75rem;
-  background: url("../assets/images/sprites-advantage.png") -10px -10px;
+  background: url("../assets/images/sprites-advantage.png") -0.625rem -0.625rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .advantage .battery::before {
     width: 5rem;
     height: 5rem;
@@ -504,9 +504,9 @@ header address a {
   max-width: 100%;
   width: 3.313rem;
   height: 2.938rem;
-  background: url("../assets/images/sprites-advantage.png") -10px -90px;
+  background: url("../assets/images/sprites-advantage.png") -0.625rem -5.625rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .advantage .sound::before {
     width: 4.45rem;
     height: 3.85rem;
@@ -519,9 +519,9 @@ header address a {
   max-width: 100%;
   width: 3.688rem;
   height: 3.75rem;
-  background: url("../assets/images/sprites-advantage.png") -90px -10px;
+  background: url("../assets/images/sprites-advantage.png") -5.625rem -0.625rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .advantage .clock::before {
     width: 4.7rem;
     height: 5.1rem;
@@ -534,17 +534,17 @@ header address a {
   padding-top: 1.5rem;
   padding-bottom: 0.438rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .advantage h3 {
-    font-size: 23px;
-    padding-bottom: 18px;
+    font-size: 1.4375rem;
+    padding-bottom: 1.125rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .advantage h3 {
     padding-top: 0;
-    font-size: 24px;
-    padding-left: 12px;
+    font-size: 1.5rem;
+    padding-left: 0.75rem;
   }
 }
 .advantage article {
@@ -553,14 +553,14 @@ header address a {
   color: #666;
   padding: 0 0.75rem 0 0.75rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .advantage article {
-    padding: 0 9px 0 9px;
+    padding: 0 0.5625rem 0 0.5625rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .advantage article {
-    padding: 0 12px 0 10px;
+    padding: 0 0.75rem 0 0.625rem;
   }
 }
 .advantage .circle {
@@ -576,7 +576,7 @@ header address a {
           align-items: center;
   padding-top: 3.125rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .advantage .circle {
     display: none;
   }
@@ -585,13 +585,13 @@ header address a {
   width: 0.625rem;
   height: 0.625rem;
   background: #dadada;
-  border-radius: 50px;
+  border-radius: 3.125rem;
 }
 .advantage .circle-big {
   width: 1.25rem;
   height: 1.25rem;
   background: #dadada;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   margin: 0 0.313rem 0 0.313rem;
 }
 .advantage .card {
@@ -602,19 +602,19 @@ header address a {
       -ms-flex: 1;
           flex: 1;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .advantage .card {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-bottom: 31px;
+    padding-bottom: 1.9375rem;
   }
   .advantage .card:last-child {
     padding-bottom: 0;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .advantage .texting {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -630,12 +630,12 @@ header address a {
   content: "";
   display: inline-block;
   position: absolute;
-  left: 200px;
-  bottom: -17.5px;
-  width: 35px;
-  height: 35px;
+  left: 12.5rem;
+  bottom: 0.3125rem;
+  width: 2.1875rem;
+  height: 2.1875rem;
   background: #868686;
-  border-radius: 50px;
+  border-radius: 3.125rem;
 }
 
 .review h1 {
@@ -646,9 +646,9 @@ header address a {
   font-weight: 700;
   color: #292929;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .review h1 {
-    font-style: 32px;
+    font-style: 2rem;
   }
 }
 .review ul {
@@ -658,31 +658,31 @@ header address a {
   background-color: #F8FAF9;
   margin-bottom: 0.94rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .review ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .review ul {
-    margin-bottom: 44px;
+    margin-bottom: 2.75rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .review ul img {
-    height: 130px;
-    width: 130px;
-    margin-top: 56px;
-    margin-bottom: 32px;
+    height: 8.125rem;
+    width: 8.125rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .review ul img {
-    margin-bottom: 21px;
+    margin-bottom: 1.3125rem;
   }
 }
 .review li {
@@ -701,7 +701,7 @@ header address a {
 .review li:nth-child(1) {
   padding-right: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .review li {
     padding: 0;
     -webkit-box-align: center;
@@ -714,9 +714,9 @@ header address a {
   font-weight: 700;
   color: #292929;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .review h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 .review article {
@@ -727,19 +727,19 @@ header address a {
   font-weight: 400;
   color: #666;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .review article {
     text-align: center;
     padding-right: 0;
-    margin: 0 24px 0 24px;
-    font-size: 16px;
+    margin: 0 1.5rem 0 1.5rem;
+    font-size: 1rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .review article {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin: 0 37px 0 37px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin: 0 2.3125rem 0 2.3125rem;
   }
 }
 .review p {
@@ -747,16 +747,16 @@ header address a {
   font-weight: 700;
   color: #292929;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .review p {
-    padding-bottom: 30px;
-    font-size: 16px;
+    padding-bottom: 1.875rem;
+    font-size: 1rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .review p {
-    font-size: 18px;
-    padding: 0 0 20px 0;
+    font-size: 1.125rem;
+    padding: 0 0 1.25rem 0;
   }
 }
 .review .clicker {
@@ -770,11 +770,11 @@ header address a {
 .review .clicker .users img {
   height: 4.63rem;
   width: 4.63rem;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   margin-right: 0.38rem;
 }
 .review .clicker .active {
-  border: 4px solid #e01f3d;
+  border: 0.25rem solid #e01f3d;
 }
 
 .edge-delivery {
@@ -792,16 +792,16 @@ header address a {
   text-transform: uppercase;
   padding-bottom: 2.81rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .delivery h1 {
-    font-size: 48px;
-    padding-bottom: 30px;
+    font-size: 3rem;
+    padding-bottom: 1.875rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .delivery h1 {
-    font-size: 32px;
-    padding-bottom: 39px;
+    font-size: 2rem;
+    padding-bottom: 2.4375rem;
   }
 }
 .delivery .delivery-form {
@@ -809,19 +809,19 @@ header address a {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .delivery .delivery-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 468px;
+    max-width: 29.25rem;
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .delivery .delivery-form {
-    padding: 0 10px 0 10px;
+    padding: 0 0.625rem 0 0.625rem;
   }
 }
 
@@ -850,7 +850,7 @@ header address a {
 .delivery-form__col:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .delivery-form__col {
     margin-right: 0;
   }
@@ -862,11 +862,11 @@ header address a {
   font-weight: 400;
   color: #000;
   padding: 1.125rem 0 1.125rem 0.75rem;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .delivery-form__input {
-    padding: 8px 0 8px 10px;
+    padding: 0.5rem 0 0.5rem 0.625rem;
   }
 }
 
@@ -877,9 +877,9 @@ header address a {
   padding-bottom: 0.375rem;
   padding-top: 0.688rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   .delivery-form__name {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -889,25 +889,46 @@ header address a {
   display: flex;
   padding-top: 2.375rem;
   padding-bottom: 1.188rem;
+  position: relative;
 }
-@media screen and (max-width: 480px) {
-  .delivery .pay {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.delivery .pay label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.delivery .pay p {
+.delivery .pay label input:checked ~ .input-visible {
+  position: relative;
+  background: #f5f5f5;
+}
+.delivery .pay label input:checked ~ .input-visible::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.8125rem;
+  height: 0.8125rem;
+  left: 0.375rem;
+  top: 0.375rem;
+  background: #e01f3d;
+  border-radius: 50%;
+}
+.delivery .pay label input {
+  display: none;
+}
+.delivery .pay label .input-visible {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  background: #fff;
+  border-radius: 50%;
+}
+.delivery .pay label p {
   padding-left: 0.625rem;
   padding-right: 1rem;
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
-}
-@media screen and (max-width: 768px) {
-  .delivery .pay p {
-    font-size: 16px;
-  }
 }
 .delivery .call {
   display: -webkit-box;
@@ -915,23 +936,43 @@ header address a {
   display: flex;
   padding-bottom: 3rem;
 }
-@media screen and (max-width: 480px) {
-  .delivery .call {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.delivery .call label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.delivery .call p {
+.delivery .call label input:checked ~ .input-visible {
+  position: relative;
+  background: #f5f5f5;
+}
+.delivery .call label input:checked ~ .input-visible::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.625rem;
+  height: 0.5rem;
+  left: 0.5rem;
+  top: 0.5rem;
+  background-image: url(../assets/images/galka.svg);
+  background-size: cover;
+}
+.delivery .call label input {
+  display: none;
+}
+.delivery .call label .input-visible {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  background: #fff;
+  border-radius: 0.25rem;
+}
+.delivery .call label p {
   padding-left: 0.625rem;
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
-}
-@media screen and (max-width: 768px) {
-  .delivery .call p {
-    font-size: 16px;
-  }
 }
 .delivery .active-btn {
   display: -webkit-box;
@@ -941,7 +982,7 @@ header address a {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .delivery .active-btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -949,20 +990,20 @@ header address a {
   }
 }
 .delivery .btn {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  padding: 16px 36px;
-  border-radius: 100px;
+  padding: 1rem 2.25rem;
+  border-radius: 6.25rem;
   background-color: #e01f3d;
   border: none;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .delivery .btn {
-    font-size: 16px;
-    padding: 21px 41px;
+    font-size: 1rem;
+    padding: 1.3125rem 2.5625rem;
   }
 }
 .delivery .clear {
@@ -974,7 +1015,7 @@ header address a {
   border: none;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: rem(768px)) {
   .delivery .clear {
     color: #e01f3d;
   }
@@ -1005,7 +1046,7 @@ footer {
   right: 0;
   background-color: white;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1014,39 +1055,50 @@ footer {
   }
 }
 footer .footer-content {
-  margin-left: 86px;
+  margin-left: 5.375rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   footer .footer-content {
     margin-left: 0;
     text-align: center;
   }
 }
 footer .footer-content div {
-  padding-bottom: 18px;
+  padding-bottom: 1.125rem;
 }
 footer address {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   color: #292929;
   font-style: normal;
-  padding-top: 20px;
-  padding-bottom: 3px;
+  padding-top: 1.25rem;
+  padding-bottom: 0.1875rem;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: rem(480px)) {
   footer address {
-    padding-bottom: 12px;
+    padding-bottom: 0.75rem;
   }
 }
 footer a {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   color: #292929;
 }
 footer .footer-sprite {
-  margin-right: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 3.375rem;
 }
-@media screen and (max-width: 768px) {
+footer .footer-sprite nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: rem(768px)) {
   footer .footer-sprite nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1055,76 +1107,28 @@ footer .footer-sprite {
 }
 footer .footer-sprite nav li {
   display: inline-block;
-}
-footer .footer-sprite .icon {
-  width: 36px;
-  height: 36px;
-  padding: 0;
-  border-radius: 50%;
-  position: relative;
+  height: 30px;
+  width: 30px;
   margin-right: 10px;
-  cursor: pointer;
 }
-@media screen and (max-width: 480px) {
-  footer .footer-sprite .icon {
-    margin-bottom: 31px;
-  }
+footer .footer-sprite nav li:last-child {
+  margin-right: 0;
 }
-footer .footer-sprite .icon:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 36px;
-  height: 36px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+footer .footer-sprite nav li .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-footer .footer-sprite .icon:hover:after {
-  opacity: 0;
+footer .footer-sprite nav li .icon .icon-sprite {
+  fill: #b3b3b3;
 }
-footer .telegram:after {
-  background: url("../assets/images/sprites-footer.png") -122px -66px;
-}
-footer .vk:after {
-  background: url("../assets/images/sprites-footer.png") -10px -122px;
-}
-footer .facebook:after {
-  background: url("../assets/images/sprites-footer.png") -10px -10px;
-}
-footer .instagram:after {
-  background: url("../assets/images/sprites-footer.png") -10px -66px;
-}
-footer .icon:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-footer .icon:hover:before {
-  opacity: 1;
-}
-footer .telegram:before {
-  background: url("../assets/images/sprites-footer.png") -122px -10px;
-}
-footer .vk:before {
-  background: url("../assets/images/sprites-footer.png") -66px -122px;
-}
-footer .facebook:before {
-  background: url("../assets/images/sprites-footer.png") -66px -10px;
-}
-footer .instagram:before {
-  background: url("../assets/images/sprites-footer.png") -66px -66px;
+footer .footer-sprite nav li .icon .icon-sprite:hover {
+  fill: #000;
 }

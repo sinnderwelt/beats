@@ -16,13 +16,13 @@
       padding-bottom: 2.81rem;
 
       @include tablets {
-        font-size: 48px;
-        padding-bottom: 30px;
+        font-size: rem(48px);
+        padding-bottom: rem(30px);
       }
 
       @include phones {
-        font-size: 32px;
-        padding-bottom: 39px;
+        font-size: rem(32px);
+        padding-bottom: rem(39px);
       }
     }
   
@@ -31,12 +31,12 @@
 
       @include tablets {
         flex-direction: column;
-        max-width: 468px;
+        max-width: rem(468px);
         margin: 0 auto;
       }
 
       @include phones {
-        padding: 0 10px 0 10px;
+        padding: 0 rem(10px) 0 rem(10px);
       }
     }
   }
@@ -71,10 +71,10 @@
     font-weight: 400;
     color: #000;
     padding: 1.125rem 0 1.125rem 0.75rem;
-    border-radius: 4px;
+    border-radius: rem(4px);
 
     @include tablets {
-      padding: 8px 0 8px 10px;
+      padding: rem(8px) 0 rem(8px) rem(10px);
     }
   }
   
@@ -86,7 +86,7 @@
     padding-top: 0.688rem;
 
     @include phones {
-      font-size: 16px;
+      font-size: rem(16px);
     }
   }
   
@@ -95,20 +95,43 @@
       display: flex;
       padding-top: 2.375rem;
       padding-bottom: 1.188rem;
-  
-      @include phones {
-        justify-content: center;
-      }
+      position: relative;
 
-      p {
-        padding-left: 0.625rem;
-        padding-right: 1rem;
-        font-size: 1rem;
-        font-weight: 400;
-        color: #fff;
+      label {
+        display: flex;
+        align-items: center;
+      
+        input:checked ~ .input-visible {
+          position: relative;
+          background: $white;
 
-        @include tablets {
-          font-size: 16px;
+            &::before {
+              content: '';
+              display: block;
+              position: absolute;
+              width: rem(13px);
+              height: rem(13px);
+              left: rem(6px);
+              top: rem(6px);
+              background: $red;
+              border-radius: 50%;
+            }
+        }
+        input {
+          display: none;
+        }
+        .input-visible {
+          width: rem(25px);
+          height: rem(25px);
+          background: #fff;
+          border-radius: 50%;
+        }
+        p {
+          padding-left: 0.625rem;
+          padding-right: 1rem;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #fff;
         }
       }
     }
@@ -116,19 +139,42 @@
     .call {
       display: flex;
       padding-bottom: 3rem;
+      
+      label {
+        display: flex;
+        align-items: center;
+      
+        input:checked ~ .input-visible {
+          position: relative;
+          background: $white;
 
-      @include phones {
-        justify-content: center;
-      }
-  
-      p {
-        padding-left: 0.625rem;
-        font-size: 1rem;
-        font-weight: 400;
-        color: #fff;
-
-        @include tablets {
-          font-size: 16px;
+            &::before {
+              content: '';
+              display: block;
+              position: absolute;
+              width: rem(10px);
+              height: rem(8px);
+              left: rem(8px);
+              top: rem(8px);
+              background-image: url(../assets/images/galka.svg);
+              background-size: cover;
+            }
+        }
+        input {
+          display: none;
+        }
+        .input-visible {
+          width: rem(25px);
+          height: rem(25px);
+          background: #fff;
+          border-radius: rem(4px);
+        }
+        
+        p {
+          padding-left: 0.625rem;
+          font-size: 1rem;
+          font-weight: 400;
+          color: #fff;
         }
       }
     }
@@ -148,8 +194,8 @@
       cursor: pointer;
 
       @include tablets {
-        font-size: 16px;
-        padding: 21px 41px;
+        font-size: rem(16px);
+        padding: rem(21px) rem(41px);
       }
     }
   

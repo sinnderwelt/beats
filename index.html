@@ -201,14 +201,23 @@
                                     <div class="delivery-form__name">Комментарий</div>
                                     <textarea class="delivery-form__input" name="" cols="30" rows="7"></textarea>
                                     <div class="pay">
-                                        <input type="radio" name="payment"> 
-                                        <p>Потребуется сдача</p>
-                                        <input type="radio" name="payment"> 
-                                        <p>Оплата картой</p>
+                                        <label>
+                                            <input type="radio" name="payment"> 
+                                            <div class="input-visible"></div>
+                                            <p>Потребуется сдача</p>
+                                        </label> 
+                                        <label>
+                                            <input type="radio" name="payment"> 
+                                            <div class="input-visible"></div>
+                                            <p>Оплата картой</p>
+                                        </label>
                                     </div>
                                     <div class="call">
-                                        <input type="checkbox" checked>
-                                        <p>Не перезванивать</p>
+                                        <label>
+                                            <input type="checkbox" checked>
+                                            <div class="input-visible"></div>
+                                            <p>Не перезванивать</p>
+                                        </label>
                                     </div>
                                     <div class="active-btn">
                                         <input type="submit" value="Заказать" class="btn">
@@ -239,16 +248,32 @@
                     <nav>
                         <ul>
                             <li>
-                                <div class="icon telegram"><a href="#"></a></div>
+                                <div class="icon">
+                                    <svg class="icon-sprite">
+                                        <use xlink:href="../assets/images/sprite.svg#vk"></use>
+                                    </svg>
+                                </div>
                             </li>
                             <li>
-                                <div class="icon vk"><a href="#"></a></div>
+                                <div class="icon">
+                                    <svg class="icon-sprite">
+                                        <use xlink:href="../assets/images/sprite.svg#fc"></use>
+                                    </svg>
+                                </div>
                             </li>
                             <li>
-                                <div class="icon facebook"><a href="#"></a></div>
+                                <div class="icon">
+                                    <svg class="icon-sprite">
+                                        <use xlink:href="../assets/images/sprite.svg#inst"></use>
+                                    </svg>
+                                </div>
                             </li>
                             <li>
-                                <div class="icon instagram"><a href="#"></a></div>
+                                <div class="icon">
+                                    <svg class="icon-sprite">
+                                        <use xlink:href="../assets/images/sprite.svg#teleg"></use>
+                                    </svg>
+                                </div>
                             </li>
                         </ul>
                     </nav>

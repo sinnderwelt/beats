@@ -3,8 +3,8 @@ $gray: #666;
 $black: #292929;
 $red: #e01f3d;
 
-$tablets: 768px;
-$phones: 480px;
+$tablets: rem(768px);
+$phones: rem(480px);
 
 $z-point: 100;
 
@@ -16,12 +16,12 @@ $z-point: 100;
   }
 
   @mixin btn {
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    padding: 16px 36px;
-    border-radius: 100px;
+    padding: rem(16px) rem(36px);
+    border-radius: rem(100px);
     background-color: $red;
   }
   @mixin description-icon {
@@ -29,7 +29,7 @@ $z-point: 100;
     display: inline-block;
     position: absolute;
     background-repeat: no-repeat;
-    height: 41px;
-    width: 41px;
+    height: rem(41px);
+    width: rem(41px);
     max-width: 100%;
   }

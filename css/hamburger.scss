@@ -1,6 +1,6 @@
 .hamburger {
-    width: 29px;
-    height: 26px;
+    width: rem(29px);
+    height: rem(26px);
     flex-direction: column;
     justify-content: space-between;
     display: none;
@@ -12,7 +12,7 @@
     & span {
         display: block;
         background: $black;
-        height: 4px;
-        border-radius: 10px;
+        height: rem(4px);
+        border-radius: rem(10px);
     }
 }

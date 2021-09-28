@@ -1,12 +1,14 @@
+  $baseFontSize: 16px;
+  
   html {
-    font-size: 16px;
+    font-size: rem(16px);
 
     @include tablets {
-      font-size: 13px;
+      font-size: rem(13px);
     }
 
     @include phones {
-      font-size: 12px;
+      font-size: rem(12px);
     }
   }
   
@@ -16,29 +18,29 @@
   
   .wrapper {
     margin: 0 auto;
-    min-width: 0px;
+    min-width: rem(0px);
     overflow: hidden;
   }
   
   section {
     display: flex;
     height: 100vh;
-    min-height: 652px;
+    min-height: rem(652px);
     justify-content: center;
   }
 
   .container {
     margin: 0 auto;
     width: 95%;
-    max-width: 940px;
+    max-width: rem(940px);
     display: flex;
     flex-direction: column;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: rem(5px);
+    margin-left: rem(5px);
     justify-content: space-around;
 
     @include tablets {
-      max-width: 724px;
+      max-width: rem(724px);
     }
   }
   
@@ -66,7 +68,7 @@
     }
   
     .logo {
-      padding-right: 38px;
+      padding-right: rem(38px);
     }
   
     nav {
@@ -80,11 +82,11 @@
       li {
         display: inline-block;
         vertical-align: middle;
-        padding-right: 24px;
+        padding-right: rem(24px);
       }
   
       a {
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 400;
         color: $black;
         font-family: 'Alegreya Sans', sans-serif;
@@ -93,8 +95,8 @@
   
     address {
       img {
-        padding-left: 17px;
-        padding-right: 2px;
+        padding-left: rem(17px);
+        padding-right: rem(2px);
         max-width: 100%;
       }
   
@@ -103,7 +105,7 @@
         font-family: Play;
         font-style: normal;
         font-weight: normal;
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 400;
         white-space: nowrap;
       }
@@ -127,37 +129,37 @@
     
   }
     h1 {
-      font-size: 48px;
+      font-size: rem(48px);
       font-weight: 700;
       text-transform: uppercase;
-      padding-top: 85px;
-      padding-bottom: 16px;
+      padding-top: rem(85px);
+      padding-bottom: rem(16px);
       width: 50%;
       color: $black;
 
       @include tablets {
-        padding: 0 37px 0 37px;
+        padding: 0 rem(37px) 0 rem(37px);
         text-align: center;
         width: 100%;
-        font-size: 38px;
+        font-size: rem(38px);
 
       }
     }
   
     p {
-      font-size: 21px;
+      font-size: rem(21px);
       font-weight: 400;
       color: $black;
-      padding-bottom: 53px;
+      padding-bottom: rem(53px);
       width: 35%;
       font-family: 'Alegreya Sans', sans-serif;
 
       @include tablets {
-        padding: 0 35px 0 35px;
+        padding: 0 rem(35px) 0 rem(35px);
         text-align: center;
         width: 100%;
-        font-size: 18px;
-        padding-bottom: 25px;
+        font-size: rem(18px);
+        padding-bottom: rem(25px);
       }
     }
   
@@ -173,15 +175,15 @@
       background: url('../assets/images/headphone.png');
       background-repeat: no-repeat;
       background-size: contain;
-      top: 40px;
+      top: rem(40px);
       right: 0;
-      height: 489px;
-      max-width: 489px;
+      height: rem(489px);
+      max-width: rem(489px);
       width: 52%;
 
       @include tablets {
         position: static;  
-        max-height: 270px;
+        max-height: rem(270px);
         min-height: 67%;     
       }
 
@@ -200,43 +202,43 @@
   .description {
     display: flex;
     align-items: center;
-    margin-top: 87px;
+    margin-top: rem(87px);
   
     .ear {
-      height: 41px;
-      width: 145px;
-      margin-right: 29px;
+      height: rem(41px);
+      width: rem(145px);
+      margin-right: rem(29px);
   
       &::before {
         @include description-icon;
-        background: url('../assets/images/sprites-header.png') -10px -10px;
+        background: url('../assets/images/sprites-header.png') rem(-10px) rem(-10px);
       }
     }
   
     .battery {
-      height: 41px;
-      width: 145px;
-      margin-right: 38px;
+      height: rem(41px);
+      width: rem(145px);
+      margin-right: rem(38px);
   
       &::before {
         @include description-icon;
-        background: url('../assets/images/sprites-header.png') -71px -10px;
+        background: url('../assets/images/sprites-header.png') rem(-71px) rem(-10px);
       }
     }
   
     .plug {
-      height: 41px;
-      width: 145px;
-      margin-right: 20px;
+      height: rem(41px);
+      width: rem(145px);
+      margin-right: rem(20px);
   
       &::before {
         @include description-icon;
-        background: url('../assets/images/sprites-header.png') -10px -71px;
+        background: url('../assets/images/sprites-header.png') rem(-10px) rem(-71px);
       }
     }
   
     p {
-      margin-left: 47px;
+      margin-left: rem(47px);
     }
 
     @include tablets {
@@ -245,8 +247,8 @@
   }
   .point {
     position: relative;
-    margin-left: 15px;
-    margin-top: 300px;
+    margin-left: rem(15px);
+    margin-top: rem(300px);
     z-index: $z-point;
 
     @include tablets {
@@ -254,13 +256,13 @@
     }
 
     li {
-      margin-bottom: 5px;
+      margin-bottom: rem(5px);
       position: relative;
 
       &::before {
         content: "";
-        height: 6px;
-        width: 6px;
+        height: rem(6px);
+        width: rem(6px);
         border-radius: 50%;
         background: $black;
         position: absolute;
@@ -270,10 +272,10 @@
       }
 
       a {
-        width: 16px;
-        height: 16px;
+        width: rem(16px);
+        height: rem(16px);
         border-radius: 50%;
-        border: 1px solid transparent;
+        border: rem(1px) solid transparent;
         display: block;
 
         &.active {
@@ -289,11 +291,11 @@
 
   // @media (max-width: 768px) {
     // html {
-    //   font-size: 13px;
+    //   font-size: rem(13px);
     // }
   
     // .container {
-    //   max-width: 724px;
+    //   max-width: rem(724px);
     // }
     // header {
     //   ul {
@@ -321,26 +323,26 @@
     // }
     // .advantage {
     //   // h1 {
-    //   //   padding-bottom: 11px !important;
+    //   //   padding-bottom: rem(11px) !important;
     //   // }
     //   // p {
-    //   //   padding-bottom: 52px !important;
+    //   //   padding-bottom: rem(52px) !important;
     //   // }
     //   // .circle {
     //   //   display: none !important;
     //   // }
     //   // h3 {
-    //   //   font-size: 23px !important;
-    //   //   padding-bottom: 18px !important;
+    //   //   font-size: rem(23px) !important;
+    //   //   padding-bottom: rem(18px) !important;
     //   // }
     //   // article {
-    //   //   padding: 0 9px 0 9px !important;
+    //   //   padding: 0 rem(9px) 0 rem(9px) !important;
     //   // }
     // }
     // .review {
     //   // ul {
     //   //   // flex-direction: column;
-    //   //   margin-bottom: 32px !important;
+    //   //   margin-bottom: rem(32px) !important;
     //   // }
   
     //   // li {
@@ -349,56 +351,56 @@
     //   // }
   
     //   // ul img {
-    //   //   height: 130px;
-    //   //   width: 130px;
-    //   //   margin-top: 56px;
-    //   //   margin-bottom: 32px;
+    //   //   height: rem(130px);
+    //   //   width: rem(130px);
+    //   //   margin-top: rem(56px);
+    //   //   margin-bottom: rem(32px);
     //   // }
   
     //   // h3 {
-    //     // font-size: 24px ;
+    //     // font-size: rem(24px) ;
     //   // }
   
     //   // article {
     //   //   text-align: center;
     //   //   padding-right: 0 !important;
-    //   //   margin: 0 24px 0 24px;
-    //   //   font-size: 16px !important;
+    //   //   margin: 0 rem(24px) 0 rem(24px);
+    //   //   font-size: rem(16px) !important;
     //   // }
   
     //   // p {
-    //   //   padding-bottom: 30px;
-    //   //   font-size: 16px !important;
+    //   //   padding-bottom: rem(30px);
+    //   //   font-size: rem(16px) !important;
     //   // }
     // }
   //   .delivery {
   //     // h1 {
-  //     //   font-size: 48px !important;
-  //     //   padding-bottom: 30px !important;
+  //     //   font-size: rem(48px) !important;
+  //     //   padding-bottom: rem(30px) !important;
   //     // }
   //     // .delivery-form {
   //     //   flex-direction: column;
-  //     //   max-width: 468px;
+  //     //   max-width: rem(468px);
   //     //   margin: 0 auto;
   //     // }
   //     // .delivery-form__col {
   //     //   margin-right: 0;
   //     // }
   //     // .delivery-form__input {
-  //     //   padding: 8px 0 8px 10px;
+  //     //   padding: rem(8px) 0 rem(8px) rem(10px);
   //     // }
   //     // .pay p {
-  //     //   font-size: 16px !important;
+  //     //   font-size: rem(16px) !important;
   //     // }
   //     // .call p {
-  //     //   font-size: 16px !important;
+  //     //   font-size: rem(16px) !important;
   //     // }
   //     .active-btn {
   //      justify-content: center;
   //     }
   //     .btn {
-  //       font-size: 16px !important;
-  //       padding: 21px 41px !important;
+  //       font-size: rem(16px) !important;
+  //       padding: rem(21px) rem(41px) !important;
   //     }
   //     .clear {
   //       color: $red !important;
@@ -408,19 +410,19 @@
   
   // @media (max-width: 480px) {
     // html {
-    //   font-size: 12px;
+    //   font-size: rem(12px);
     // }
     // .advantage {
     //   h1 {
-    //     font-size: 32px !important;
+    //     font-size: rem(32px) !important;
     //   }
       // ul {
       //   flex-direction: column;
-      //   padding: 0 10px 0 10px;
+      //   padding: 0 rem(10px) 0 rem(10px);
       // }
       // .card {
       //   flex-direction: row;
-      //   padding-bottom: 31px;
+      //   padding-bottom: rem(31px);
         
       //   &:last-child {
       //     padding-bottom: 0;
@@ -432,47 +434,47 @@
       // }
       // h3 {
       //   padding-top: 0 !important;
-      //   font-size: 24px !important;
-      //   padding-left: 12px;
+      //   font-size: rem(24px) !important;
+      //   padding-left: rem(12px);
       // }
       // article {
-      //   padding: 0 12px 0 10px !important;
+      //   padding: 0 rem(12px) 0 rem(10px) !important;
       // }
     // }
     // .review {
       // ul {
-      //   margin-bottom: 44px !important;
+      //   margin-bottom: rem(44px) !important;
       // }
   
       // h1 {
-      //   font-style: 32px;
+      //   font-style: rem(32px);
       // }
   
       // ul img {
-      //   margin-bottom: 21px;
+      //   margin-bottom: rem(21px);
       // }
   
       // article {
-      //   padding-top: 12px !important;
-      //   padding-bottom: 12px !important;
-      //   margin: 0 37px 0 37px;
+      //   padding-top: rem(12px) !important;
+      //   padding-bottom: rem(12px) !important;
+      //   margin: 0 rem(37px) 0 rem(37px);
       // }
   
     //   p {
-    //     font-size: 18px !important;
-    //     padding: 0 0 20px 0;
+    //     font-size: rem(18px) !important;
+    //     padding: 0 0 rem(20px) 0;
     //   }
     // }
     // .delivery {
       // h1 {
-      //   font-size: 32px !important;
-      //   padding-bottom: 39px !important;
+      //   font-size: rem(32px) !important;
+      //   padding-bottom: rem(39px) !important;
       // }
       // .delivery-form {
-      //   padding: 0 10px 0 10px;
+      //   padding: 0 rem(10px) 0 rem(10px);
       // }
       // .delivery-form__name {
-      //   font-size: 16px !important;
+      //   font-size: rem(16px) !important;
       // }
     //   .pay {
     //     justify-content: center;
