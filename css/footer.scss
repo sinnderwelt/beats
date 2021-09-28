@@ -48,6 +48,9 @@ footer {
       display: flex;
       
       margin-right: rem(54px);
+      @include phones {
+        margin-right: 0;
+      }
     nav ul {
       display: flex;
       justify-content: center;

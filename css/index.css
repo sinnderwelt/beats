@@ -2,12 +2,12 @@
 html {
   font-size: 1rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 0.8125rem;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   html {
     font-size: 0.75rem;
   }
@@ -50,7 +50,7 @@ section {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 45.25rem;
   }
@@ -93,7 +93,7 @@ header .logo {
 header nav ul {
   text-align: center;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   header nav ul {
     display: none;
   }
@@ -123,7 +123,7 @@ header address a {
   font-weight: 400;
   white-space: nowrap;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   header address {
     display: none;
   }
@@ -132,7 +132,7 @@ header address a {
 .content {
   position: relative;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .content div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -156,7 +156,7 @@ header address a {
   width: 50%;
   color: #292929;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .content h1 {
     padding: 0 2.3125rem 0 2.3125rem;
     text-align: center;
@@ -172,7 +172,7 @@ header address a {
   width: 35%;
   font-family: "Alegreya Sans", sans-serif;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .content p {
     padding: 0 2.1875rem 0 2.1875rem;
     text-align: center;
@@ -203,19 +203,19 @@ header address a {
   max-width: 30.5625rem;
   width: 52%;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .content::after {
     position: static;
     max-height: 16.875rem;
     min-height: 67%;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .content::after {
     width: 80%;
   }
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -287,7 +287,7 @@ header address a {
 .description p {
   margin-left: 2.9375rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .description {
     display: none;
   }
@@ -299,7 +299,7 @@ header address a {
   margin-top: 18.75rem;
   z-index: 100;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .point {
     display: none;
   }
@@ -343,7 +343,7 @@ header address a {
           justify-content: space-between;
   display: none;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .hamburger {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -411,12 +411,12 @@ header address a {
   color: #292929;
   padding-bottom: 1.125rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .advantage h1 {
     padding-bottom: 0.6875rem;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .advantage h1 {
     font-size: 2rem;
   }
@@ -427,7 +427,7 @@ header address a {
   color: #666;
   padding-bottom: 3.875rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .advantage p {
     padding-bottom: 3.25rem;
   }
@@ -440,7 +440,7 @@ header address a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .advantage ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -491,7 +491,7 @@ header address a {
   height: 3.75rem;
   background: url("../assets/images/sprites-advantage.png") -0.625rem -0.625rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .advantage .battery::before {
     width: 5rem;
     height: 5rem;
@@ -506,7 +506,7 @@ header address a {
   height: 2.938rem;
   background: url("../assets/images/sprites-advantage.png") -0.625rem -5.625rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .advantage .sound::before {
     width: 4.45rem;
     height: 3.85rem;
@@ -521,7 +521,7 @@ header address a {
   height: 3.75rem;
   background: url("../assets/images/sprites-advantage.png") -5.625rem -0.625rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .advantage .clock::before {
     width: 4.7rem;
     height: 5.1rem;
@@ -534,13 +534,13 @@ header address a {
   padding-top: 1.5rem;
   padding-bottom: 0.438rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .advantage h3 {
     font-size: 1.4375rem;
     padding-bottom: 1.125rem;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .advantage h3 {
     padding-top: 0;
     font-size: 1.5rem;
@@ -553,12 +553,12 @@ header address a {
   color: #666;
   padding: 0 0.75rem 0 0.75rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .advantage article {
     padding: 0 0.5625rem 0 0.5625rem;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .advantage article {
     padding: 0 0.75rem 0 0.625rem;
   }
@@ -576,7 +576,7 @@ header address a {
           align-items: center;
   padding-top: 3.125rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .advantage .circle {
     display: none;
   }
@@ -602,7 +602,7 @@ header address a {
       -ms-flex: 1;
           flex: 1;
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .advantage .card {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -614,7 +614,7 @@ header address a {
     padding-bottom: 0;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .advantage .texting {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -646,7 +646,7 @@ header address a {
   font-weight: 700;
   color: #292929;
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .review h1 {
     font-style: 2rem;
   }
@@ -658,7 +658,7 @@ header address a {
   background-color: #F8FAF9;
   margin-bottom: 0.94rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .review ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -667,12 +667,12 @@ header address a {
     margin-bottom: 2rem;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .review ul {
     margin-bottom: 2.75rem;
   }
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .review ul img {
     height: 8.125rem;
     width: 8.125rem;
@@ -680,7 +680,7 @@ header address a {
     margin-bottom: 2rem;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .review ul img {
     margin-bottom: 1.3125rem;
   }
@@ -701,7 +701,7 @@ header address a {
 .review li:nth-child(1) {
   padding-right: 0;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .review li {
     padding: 0;
     -webkit-box-align: center;
@@ -714,7 +714,7 @@ header address a {
   font-weight: 700;
   color: #292929;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .review h3 {
     font-size: 1.5rem;
   }
@@ -727,7 +727,7 @@ header address a {
   font-weight: 400;
   color: #666;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .review article {
     text-align: center;
     padding-right: 0;
@@ -735,7 +735,7 @@ header address a {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .review article {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -747,13 +747,13 @@ header address a {
   font-weight: 700;
   color: #292929;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .review p {
     padding-bottom: 1.875rem;
     font-size: 1rem;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .review p {
     font-size: 1.125rem;
     padding: 0 0 1.25rem 0;
@@ -792,13 +792,13 @@ header address a {
   text-transform: uppercase;
   padding-bottom: 2.81rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .delivery h1 {
     font-size: 3rem;
     padding-bottom: 1.875rem;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .delivery h1 {
     font-size: 2rem;
     padding-bottom: 2.4375rem;
@@ -809,7 +809,7 @@ header address a {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .delivery .delivery-form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -819,7 +819,7 @@ header address a {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .delivery .delivery-form {
     padding: 0 0.625rem 0 0.625rem;
   }
@@ -850,7 +850,7 @@ header address a {
 .delivery-form__col:last-child {
   margin-right: 0;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .delivery-form__col {
     margin-right: 0;
   }
@@ -864,7 +864,7 @@ header address a {
   padding: 1.125rem 0 1.125rem 0.75rem;
   border-radius: 0.25rem;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .delivery-form__input {
     padding: 0.5rem 0 0.5rem 0.625rem;
   }
@@ -877,7 +877,7 @@ header address a {
   padding-bottom: 0.375rem;
   padding-top: 0.688rem;
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   .delivery-form__name {
     font-size: 1rem;
   }
@@ -982,7 +982,7 @@ header address a {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .delivery .active-btn {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1000,7 +1000,7 @@ header address a {
   border: none;
   cursor: pointer;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .delivery .btn {
     font-size: 1rem;
     padding: 1.3125rem 2.5625rem;
@@ -1015,7 +1015,7 @@ header address a {
   border: none;
   cursor: pointer;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   .delivery .clear {
     color: #e01f3d;
   }
@@ -1046,7 +1046,7 @@ footer {
   right: 0;
   background-color: white;
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1057,7 +1057,7 @@ footer {
 footer .footer-content {
   margin-left: 5.375rem;
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   footer .footer-content {
     margin-left: 0;
     text-align: center;
@@ -1074,7 +1074,7 @@ footer address {
   padding-top: 1.25rem;
   padding-bottom: 0.1875rem;
 }
-@media screen and (max-width: rem(480px)) {
+@media screen and (max-width: 480px) {
   footer address {
     padding-bottom: 0.75rem;
   }
@@ -1090,6 +1090,11 @@ footer .footer-sprite {
   display: flex;
   margin-right: 3.375rem;
 }
+@media screen and (max-width: 480px) {
+  footer .footer-sprite {
+    margin-right: 0;
+  }
+}
 footer .footer-sprite nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1098,7 +1103,7 @@ footer .footer-sprite nav ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (max-width: rem(768px)) {
+@media screen and (max-width: 768px) {
   footer .footer-sprite nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
