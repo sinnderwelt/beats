@@ -113,6 +113,10 @@
       width: 5rem;
       height: 5rem;
     }
+    @include phones {
+      width: 5rem;
+      height: 6rem;
+    }
   }
 
   .sound::before {
@@ -123,9 +127,13 @@
   
     @include tablets {
       width: 4.45rem;
-      height: 3.85rem;
+      height: 5.85rem;
     }
-  
+    @include phones {
+      width: 4.65rem;
+      height: 5.85rem;
+      background: url('../assets/images/sprites-advantage.png') rem(-10px) 5.625rem;
+    }
   }
 
   .clock::before {
@@ -135,8 +143,12 @@
     background: url('../assets/images/sprites-advantage.png') rem(-90px) rem(-10px);
   
     @include tablets {
-      width: 4.7rem;
+      width: 7.1rem;
       height: 5.1rem;
+    }
+    @include phones {
+      width: 8.7rem;
+      height: 6.1rem;
     }
   }
 

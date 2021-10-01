@@ -497,6 +497,12 @@ header address a {
     height: 5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .advantage .battery::before {
+    width: 5rem;
+    height: 6rem;
+  }
+}
 .advantage .sound::before {
   content: "";
   display: block;
@@ -509,7 +515,14 @@ header address a {
 @media screen and (max-width: 768px) {
   .advantage .sound::before {
     width: 4.45rem;
-    height: 3.85rem;
+    height: 5.85rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantage .sound::before {
+    width: 4.65rem;
+    height: 5.85rem;
+    background: url("../assets/images/sprites-advantage.png") -0.625rem 5.625rem;
   }
 }
 .advantage .clock::before {
@@ -523,8 +536,14 @@ header address a {
 }
 @media screen and (max-width: 768px) {
   .advantage .clock::before {
-    width: 4.7rem;
+    width: 7.1rem;
     height: 5.1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .advantage .clock::before {
+    width: 8.7rem;
+    height: 6.1rem;
   }
 }
 .advantage h3 {
@@ -862,7 +881,6 @@ header address a {
   font-weight: 400;
   color: #000;
   padding: 1.125rem 0 1.125rem 0.75rem;
-  border-radius: 0.25rem;
 }
 @media screen and (max-width: 768px) {
   .delivery-form__input {
