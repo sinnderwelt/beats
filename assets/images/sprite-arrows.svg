@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="left_arrows">
+        <path d="M14 28L1.91422 15.9142C1.13317 15.1332 1.13317 13.8668 1.91421 13.0858L14 1" stroke="black" stroke-width="2" stroke-linecap="round" fill="transparent"/>
+    </symbol>
+    <symbol id="right_arrows">
+        <path d="M1 1L13.0858 13.0858C13.8668 13.8668 13.8668 15.1332 13.0858 15.9142L1 28" stroke="black" stroke-width="2" stroke-linecap="round" fill="transparent"/>
+    </symbol>
+</svg>

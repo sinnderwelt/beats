@@ -52,6 +52,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   .container {
+    position: relative;
     max-width: 45.25rem;
   }
 }
@@ -77,6 +78,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  header {
+    position: absolute;
+    top: 35px;
+    width: 100%;
+  }
+}
 header div:nth-child(2) {
   -webkit-box-flex: 7;
       -ms-flex: 7;
@@ -86,6 +94,9 @@ header div:nth-child(3) {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+header .header-logo {
+  left: 0;
 }
 header .logo {
   padding-right: 2.375rem;
@@ -342,6 +353,7 @@ header address a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   display: none;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -640,6 +652,293 @@ header address a {
             flex: 1;
     text-align: left;
   }
+}
+
+.edge-buying {
+  background-color: #f8faf9;
+}
+.edge-buying .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .edge-buying .arrows {
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .edge-buying .arrows .arrows_prev {
+    position: absolute;
+    left: 80px;
+    top: 290px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .edge-buying .arrows .arrows_prev {
+    left: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .edge-buying .arrows .arrows_next {
+    position: absolute;
+    right: 80px;
+    top: 290px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .edge-buying .arrows .arrows_next {
+    right: -10px;
+  }
+}
+.edge-buying .arrows .buying-sprite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 40px;
+  width: 27px;
+}
+
+.buying ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .buying ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.buying .picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 57px;
+  padding-left: 31px;
+}
+@media screen and (max-width: 768px) {
+  .buying .picture {
+    padding-right: 57px;
+    padding-left: 57px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .buying .picture img {
+    width: 306px;
+    height: 306px;
+  }
+}
+.buying .square {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  background-color: #9a9a9a;
+  height: 91px;
+  width: 91px;
+  border-radius: 4px;
+}
+.buying .square::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 42px;
+  width: 42px;
+  background: url(../assets/images/gear.png) no-repeat;
+}
+.buying .buying-main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 91px;
+}
+@media screen and (max-width: 768px) {
+  .buying .buying-main {
+    display: none;
+  }
+}
+.buying .buying-main:hover .dropdown {
+  opacity: 1;
+  left: 91px;
+}
+.buying .buying-main .dropdown {
+  left: -9999px;
+  position: absolute;
+  background: #fff;
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+.buying .buying-main .dropdown ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 28px 25px 34px 30px;
+}
+.buying .buying-main .dropdown ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #000;
+  padding-bottom: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.buying .buying-main .dropdown ul li:last-child {
+  padding-bottom: 0;
+}
+.buying .buying-main .dropdown ul li .dropdown-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.buying .buying-main .dropdown ul li .buying-dropmain {
+  height: 25px;
+  width: 24px;
+}
+.buying .buying-main .dropdown ul li p {
+  padding-left: 16px;
+  width: 127px;
+  padding-right: 10px;
+}
+.buying .buying-main .dropdown ul li span {
+  text-align: right;
+}
+.buying h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 700;
+  color: #292929;
+  padding-bottom: 24px;
+  padding-top: 25px;
+  letter-spacing: 0;
+}
+@media screen and (max-width: 768px) {
+  .buying h2 {
+    font-size: 27px;
+    text-align: center;
+  }
+}
+.buying article {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .buying article {
+    font-size: 15px;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .buying .outline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.buying .outline li {
+  padding-right: 86px;
+}
+.buying .outline li:last-child {
+  padding-right: 0;
+}
+.buying .outline title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+}
+.buying .outline .value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  padding-top: 4px;
+}
+.buying .total {
+  padding-top: 24px;
+  padding-bottom: 124px;
+}
+@media screen and (max-width: 768px) {
+  .buying .total {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.buying .total li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.buying .total .amount {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  color: #151515;
+  padding-right: 22px;
+}
+.buying .total a {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 18px 36px;
+  border-radius: 100px;
+  background-color: #e01f3d;
 }
 
 .edge-review {
@@ -1046,6 +1345,46 @@ header address a {
   max-height: 100%;
   width: auto;
   background-size: cover;
+}
+
+.fullscreen-menu_container {
+  background: #313131;
+}
+
+.fullscreen-menu {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 45.25rem;
+  display: none;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  min-height: 40.75rem;
+}
+.fullscreen-menu .cross {
+  position: absolute;
+  top: 50px;
+  right: 18px;
+  width: 20px;
+  height: 20px;
+}
+.fullscreen-menu li {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.fullscreen-menu li a {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 400;
 }
 
 footer {

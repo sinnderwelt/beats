@@ -1,0 +1,34 @@
+.fullscreen-menu_container {
+    background: #313131;
+}
+.fullscreen-menu {
+    margin: 0 auto;
+    width: 95%;
+    max-width: rem(724px);
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 40.75rem;
+    
+    .cross {
+        position: absolute;
+        top: 50px;
+        right: 18px;
+        width: 20px;
+        height: 20px;
+    }
+
+    li {
+        text-align: center;
+        padding-bottom: 20px;
+        
+        a {
+            color: #fff;
+            font-size: 36px;
+            font-weight: 400;
+        }
+    }
+}
