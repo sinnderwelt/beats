@@ -61,9 +61,9 @@ footer {
     }
       nav li {
         display: inline-block;
-        height: 30px;
-        width: 30px;
-        margin-right: 10px;
+        height: rem(30px);
+        width: rem(30px);
+        margin-right: rem(10px);
 
         &:last-child {
           margin-right: 0;

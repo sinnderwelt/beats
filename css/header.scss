@@ -60,7 +60,7 @@
 
     @include tablets {
       position: absolute;
-      top: 35px;
+      top: rem(35px);
       width: 100%;
     }
   

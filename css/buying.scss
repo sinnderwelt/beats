@@ -12,29 +12,29 @@
           .arrows_prev {
             @include tablets {
               position: absolute;
-              left: 80px;
-              top: 170px;
+              left: rem(80px);
+              top: rem(170px);
           }
             @include phones {
-              left: 5px;
+              left: rem(5px);
             }
         }
           .arrows_next {
             @include tablets {
               position: absolute;
-              right: 80px;
-              top: 170px;
+              right: rem(80px);
+              top: rem(170px);
           } 
 
             @include phones {
-              right: -10px;
+              right: rem(-10px);
             }
         }
         .buying-sprite {
             display: flex;
             justify-content: flex-end;
-            height: 40px;
-            width: 27px;
+            height: rem(40px);
+            width: rem(27px);
         }
     }
   }
@@ -51,19 +51,19 @@
     .picture {
       display: flex;
       align-items: center;
-      padding-right: 57px;
-      padding-left: 31px;
+      padding-right: rem(57px);
+      padding-left: rem(31px);
 
       @include tablets {
-        padding-right: 57px;
-        padding-left: 57px;
+        padding-right: rem(57px);
+        padding-left: rem(57px);
         justify-content: center;
       }
 
       img {
         @include tablets {
-          width: 306px;
-          height: 306px;
+          width: rem(306px);
+          height: rem(306px);
         }
       } 
     }
@@ -74,23 +74,23 @@
       justify-content: center;
       position: relative;
       background-color: #9a9a9a;
-      height: 91px;
-      width: 91px;
-      border-radius: 4px;
+      height: rem(91px);
+      width: rem(91px);
+      border-radius: rem(4px);
   
       &::before {
         content: "";
         display: block;
         position: absolute;
-        height: 42px;
-        width: 42px;
+        height: rem(42px);
+        width: rem(42px);
         background: url(../assets/images/gear.png) no-repeat;
       }
     }
     .buying-main {
         position: relative;
         display: flex;
-        width: 91px;
+        width: rem(91px);
 
         @include tablets {
           display: none;
@@ -98,27 +98,27 @@
     
         &:hover .dropdown {
             opacity: 1;
-            left: 91px;
+            left: rem(91px);
         }
 
         .dropdown {
-            left: -9999px;
+            left: rem(-9999px);
             position: absolute;
             background: #fff;
-            border-radius: 4px;
+            border-radius: rem(4px);
             opacity: 0;
             transition: opacity .4s;
 
             ul {
                 display: flex;
                 flex-direction: column;
-                padding: 28px 25px 34px 30px;
+                padding: rem(28px) rem(25px) rem(34px) rem(30px);
 
                 li {
                     display: flex;
                     justify-content: space-between;
                     color: #000;
-                    padding-bottom: 28px;
+                    padding-bottom: rem(28px);
                     align-items: center;
                     
                     &:last-child {
@@ -132,13 +132,13 @@
                     }
 
                         .buying-dropmain {
-                            height: 25px;
-                            width: 24px;
+                            height: rem(25px);
+                            width: rem(24px);
                         }
                         p {
-                            padding-left: 16px;
-                            width: 127px;
-                            padding-right: 10px;
+                            padding-left: rem(16px);
+                            width: rem(127px);
+                            padding-right: rem(10px);
                         }
                     span {
                         text-align: right;
@@ -150,28 +150,28 @@
   
     h2 {
       text-transform: uppercase;
-      font-size: 36px;
+      font-size: rem(36px);
       font-weight: 700;
       color: #292929;
-      padding-bottom: 24px;
-      padding-top: 25px;
+      padding-bottom: rem(24px);
+      padding-top: rem(25px);
       letter-spacing: 0;
 
       @include tablets {
-        font-size: 27px;
+        font-size: rem(27px);
         text-align: center;
       }
     }
   
     article {
-      font-size: 16px;
+      font-size: rem(16px);
       font-weight: 400;
       color: #666;
-      padding-bottom: 30px;
-      padding-right: 20px;
+      padding-bottom: rem(30px);
+      padding-right: rem(20px);
 
       @include tablets {
-        font-size: 15px;
+        font-size: rem(15px);
         padding-right: 0;
         text-align: center;
       }
@@ -186,7 +186,7 @@
       
 
       li {
-        padding-right: 86px;
+        padding-right: rem(86px);
   
         &:last-child {
           padding-right: 0;
@@ -194,22 +194,22 @@
       }
   
       title {
-        font-size: 16px;
+        font-size: rem(16px);
         font-weight: 400;
         color: #666;
       }
   
       .value {
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 700;
         color: #000;
-        padding-top: 4px;
+        padding-top: rem(4px);
       }
     }
   
     .total {
-      padding-top: 24px;
-      padding-bottom: 124px;
+      padding-top: rem(24px);
+      padding-bottom: rem(124px);
 
       @include tablets {
         display: flex;
@@ -224,19 +224,19 @@
   
       .amount {
         text-transform: uppercase;
-        font-size: 36px;
+        font-size: rem(36px);
         font-weight: 400;
         color: #151515;
-        padding-right: 22px;
+        padding-right: rem(22px);
       }
   
       a {
-        font-size: 18px;
+        font-size: rem(18px);
         font-weight: 700;
         text-transform: uppercase;
         color: #fff;
-        padding: 18px 36px;
-        border-radius: 100px;
+        padding: rem(18px) rem(36px);
+        border-radius: rem(100px);
         background-color: #e01f3d;
       }
     }
