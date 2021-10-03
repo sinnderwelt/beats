@@ -13,7 +13,7 @@
             @include tablets {
               position: absolute;
               left: 80px;
-              top: 290px;
+              top: 170px;
           }
             @include phones {
               left: 5px;
@@ -23,7 +23,7 @@
             @include tablets {
               position: absolute;
               right: 80px;
-              top: 290px;
+              top: 170px;
           } 
 
             @include phones {

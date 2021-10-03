@@ -674,7 +674,7 @@ header address a {
   .edge-buying .arrows .arrows_prev {
     position: absolute;
     left: 80px;
-    top: 290px;
+    top: 170px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -686,7 +686,7 @@ header address a {
   .edge-buying .arrows .arrows_next {
     position: absolute;
     right: 80px;
-    top: 290px;
+    top: 170px;
   }
 }
 @media screen and (max-width: 480px) {
