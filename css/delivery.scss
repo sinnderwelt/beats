@@ -76,7 +76,11 @@
       padding: rem(8px) 0 rem(8px) rem(10px);
     }
   }
-  
+
+  .input-error {
+    border-color: red;
+  }
+
   .delivery-form__name {
     font-size: 1rem;
     font-weight: 400;
@@ -212,3 +216,28 @@
       }
     }
   }
+  
+  .modal {
+    display: none;
+  }
+  .modal_content {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+  }
+  .modal_button-container {
+    text-align: center;
+    margin-top: 39px;
+
+    
+
+    .btn-theme {
+      @include btn;
+    }
+  }
+  .fancybox-button svg {
+    display: none;
+  }
+
+
+

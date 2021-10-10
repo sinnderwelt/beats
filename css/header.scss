@@ -14,6 +14,10 @@
   
   body {
     font-family: 'Play', sans-serif;
+    &.close {
+      height: 100vh;
+      overflow: hidden;
+    }
   }
   
   .wrapper {
@@ -44,7 +48,10 @@
       max-width: rem(724px);
     }
   }
-  
+  .container_header {
+    justify-content: stretch;
+    position: static;
+  }
   .container-center {
     display: flex;
     justify-content: center;
@@ -57,10 +64,9 @@
   header {
     display: flex;
     align-items: center;
+    padding-top: 35px;
 
     @include tablets {
-      position: absolute;
-      top: rem(35px);
       width: 100%;
     }
   
@@ -128,7 +134,14 @@
   }
   
   .content {
+    display: flex;
     position: relative;
+    flex: 1;
+    align-items: center;
+    
+    @include tablets { 
+      justify-content: center;
+    }
     
     div {
     @include tablets {
@@ -186,7 +199,6 @@
       background: url('../assets/images/headphone.png');
       background-repeat: no-repeat;
       background-size: contain;
-      top: rem(40px);
       right: 0;
       height: rem(489px);
       max-width: rem(489px);
@@ -195,7 +207,7 @@
       @include tablets {
         position: static;  
         max-height: rem(270px);
-        min-height: 67%;     
+        min-height: 50%;     
       }
 
       @include phones {
@@ -214,6 +226,7 @@
     display: flex;
     align-items: center;
     margin-top: rem(87px);
+    padding-bottom: 100px;
   
     .ear {
       height: rem(41px);

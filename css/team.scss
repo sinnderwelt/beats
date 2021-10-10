@@ -1,0 +1,124 @@
+.team {
+    .team-desktop {
+      display: flex;
+      justify-content: space-between;
+
+      @include tablets {
+        display: none;
+      }
+    }
+    .team-mobile {
+      display: none;
+
+      @include tablets {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+  
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 48px;
+      font-weight: 700;
+      color: #292929;
+      padding-bottom: 52px;
+    }
+
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 220px;
+    }
+
+    img {
+      max-width: 95%;
+      width: 220px;
+      height: auto;
+      padding-bottom: 11px;
+    }
+
+    .people {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 19px;
+      cursor: pointer;
+    }
+  
+    .name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #292929;
+      padding-bottom: 11px;
+    }
+
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      color: $gray;
+      text-align: center;
+      padding: 0 5px 0 5px;
+    }
+  
+    .triangle {
+      margin-top: -6px;
+      margin-left: 4px;
+      width: 0;
+      height: 0;
+      border-left: 4.5px solid transparent;
+      border-right: 4.5px solid transparent;
+      border-top: 9px solid red;
+    }
+
+    // .triangle-up {
+    //   margin-top: -6px;
+    //   margin-left: 4px;
+    //   width: 0;
+    //   height: 0;
+    //   border-left: 50px solid transparent;
+    //   border-right: 50px solid transparent;
+    //   border-bottom: 100px solid red;
+    // } 
+    
+    .team_hidden {
+      height: 0;
+      overflow: hidden;
+
+      .team_hidden-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .job-name {
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        padding-bottom: 4px;
+      }
+
+    }
+    .team-hidden-mobile {
+      height: 0;
+      overflow: hidden;
+
+      .team_hidden-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .job-name {
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  

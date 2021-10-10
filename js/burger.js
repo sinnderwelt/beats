@@ -1,14 +1,14 @@
 const hamb = document.querySelector('.hamburger');
-const wrap = document.querySelector('.wrapper');
+const wrap = document.querySelector('body');
 const close = document.querySelector('.close-cross');
-const menu = document.querySelector('.fullscreen-menu');
+const menu = document.querySelector('.fullscreen-menu_container');
 
 hamb.addEventListener('click', function(){
-    wrap.style.display='none';
-    menu.style.display='flex';
+    wrap.classList.add("close");
+    menu.classList.add("active");
 })
 
 close.addEventListener('click', function(){
-    wrap.style.display='block';
-    menu.style.display='none';
+    wrap.classList.remove("close");
+    menu.classList.remove("active");
 })
