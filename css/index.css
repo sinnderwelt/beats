@@ -231,6 +231,7 @@ header address a {
   content: "";
   display: inline-block;
   position: absolute;
+  top: 35px;
   background: url("../assets/images/headphone.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1307,6 +1308,17 @@ header address a {
 .review .clicker .users {
   height: 82px;
   margin-right: 0.38rem;
+}
+@media screen and (max-width: 768px) {
+  .review .clicker .users {
+    height: 67px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .review .clicker .users {
+    width: 61px;
+    height: 61px;
+  }
 }
 .review .clicker .users img {
   cursor: pointer;

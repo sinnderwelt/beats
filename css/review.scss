@@ -147,6 +147,15 @@
       .users {
         height: 82px;
         margin-right: 0.38rem;
+
+        @include tablets { 
+          height: 67px;
+        }
+
+        @include phones {
+          width: 61px;
+          height: 61px;
+        }
       }
 
       .users img {
