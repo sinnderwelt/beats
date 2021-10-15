@@ -160,9 +160,9 @@
 
       .users img {
         cursor: pointer;
-        height: 4.63rem;
-        width: 4.63rem;
-        border-radius: rem(50px); 
+        height: 100%;
+        width: 100%;
+        border-radius: 3.125rem;
       }
     }
   }
@@ -177,4 +177,24 @@
 
   .input-error {
     border-color: $red;
+  }
+
+  .review_clicker {
+    display: block;
+    width: 100%;
+    height: 100%;
+  } 
+
+  .review .clicker .users {
+    height: 74px;
+    width: 74px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 0.38rem;
+
+    @include phones {
+      height: 64px;
+      width: 64px;
+    }
+
   }

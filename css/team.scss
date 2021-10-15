@@ -27,11 +27,18 @@
       padding-bottom: 52px;
     }
 
-    li {
+    .team_item {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 220px;
+
+      &.active {
+
+        .triangle {
+          transform: rotate(180deg);
+        }
+      }
     }
 
     img {
@@ -72,6 +79,7 @@
       border-left: 4.5px solid transparent;
       border-right: 4.5px solid transparent;
       border-top: 9px solid red;
+      transition: .2s;
     }
 
     // .triangle-up {

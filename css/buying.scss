@@ -1,4 +1,5 @@
 .edge-buying {
+    position: relative;
     background-color: #f8faf9;
     
     .arrows {
@@ -8,23 +9,7 @@
         @include tablets {
           position: relative;
         }
-          
-          .arrows_prev {
-            @include tablets {
-              position: absolute;
-              left: 80px;
-              top: 290px;
-          }
-            @include phones {
-              left: 5px;
-            }
-        }
-          .arrows_next {
-            @include tablets {
-              position: absolute;
-              right: 80px;
-              top: 290px;
-          } 
+       
 
             @include phones {
               right: -10px;
@@ -37,7 +22,30 @@
             width: 27px;
         }
     }
+       
+    
+    .arrows_prev {
+        position: absolute;
+        left: 5%;
+        top: 50%;
+        z-index: 10000;
+
+        @include tablets {
+          left: 10%;
+          top: 35%;
+        }
   }
+
+  .arrows_next {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+
+    @include tablets {
+      right: 12%;
+      top: 35%;
+    }
+}
   
   .buying {
     li {
@@ -51,12 +59,8 @@
     .picture {
       display: flex;
       align-items: center;
-      padding-right: 57px;
-      padding-left: 31px;
 
       @include tablets {
-        padding-right: 57px;
-        padding-left: 57px;
         justify-content: center;
       }
 
@@ -215,7 +219,6 @@
   
     .total {
       padding-top: 24px;
-      padding-bottom: 124px;
 
       @include tablets {
         display: flex;
@@ -259,7 +262,12 @@
     background: transparent;
     margin-bottom: 0;
 
-    // img {
-    //   min-width: 452px;
-    // }
+    img {
+      top: 8%;
+      position: relative;
+    }
+  }
+
+  .buying-link {
+    margin-bottom: 20px;
   }

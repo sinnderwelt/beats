@@ -682,6 +682,7 @@ header address a {
 }
 
 .edge-buying {
+  position: relative;
   background-color: #f8faf9;
 }
 .edge-buying .arrows {
@@ -697,31 +698,12 @@ header address a {
     position: relative;
   }
 }
-@media screen and (max-width: 768px) {
-  .edge-buying .arrows .arrows_prev {
-    position: absolute;
-    left: 80px;
-    top: 290px;
-  }
-}
 @media screen and (max-width: 480px) {
-  .edge-buying .arrows .arrows_prev {
-    left: 5px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .edge-buying .arrows .arrows_next {
-    position: absolute;
-    right: 80px;
-    top: 290px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .edge-buying .arrows .arrows_next {
+  .edge-buying .arrows {
     right: -10px;
   }
 }
-.edge-buying .arrows .buying-sprite {
+.edge-buying .buying-sprite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -730,6 +712,31 @@ header address a {
           justify-content: flex-end;
   height: 40px;
   width: 27px;
+}
+
+.arrows_prev {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  z-index: 10000;
+}
+@media screen and (max-width: 768px) {
+  .arrows_prev {
+    left: 10%;
+    top: 35%;
+  }
+}
+
+.arrows_next {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
+@media screen and (max-width: 768px) {
+  .arrows_next {
+    right: 12%;
+    top: 35%;
+  }
 }
 
 .buying li {
@@ -752,13 +759,9 @@ header address a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 57px;
-  padding-left: 31px;
 }
 @media screen and (max-width: 768px) {
   .buying .picture {
-    padding-right: 57px;
-    padding-left: 57px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -943,7 +946,6 @@ header address a {
 }
 .buying .total {
   padding-top: 24px;
-  padding-bottom: 124px;
 }
 @media screen and (max-width: 768px) {
   .buying .total {
@@ -998,6 +1000,14 @@ header address a {
   background: transparent;
   margin-bottom: 0;
 }
+.bx-wrapper img {
+  top: 8%;
+  position: relative;
+}
+
+.buying-link {
+  margin-bottom: 20px;
+}
 
 .team .team-desktop {
   display: -webkit-box;
@@ -1037,7 +1047,7 @@ header address a {
   color: #292929;
   padding-bottom: 52px;
 }
-.team li {
+.team .team_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1049,6 +1059,10 @@ header address a {
       -ms-flex-align: center;
           align-items: center;
   width: 220px;
+}
+.team .team_item.active .triangle {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .team img {
   max-width: 95%;
@@ -1090,6 +1104,8 @@ header address a {
   border-left: 4.5px solid transparent;
   border-right: 4.5px solid transparent;
   border-top: 9px solid red;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .team .team_hidden {
   height: 0;
@@ -1322,8 +1338,8 @@ header address a {
 }
 .review .clicker .users img {
   cursor: pointer;
-  height: 4.63rem;
-  width: 4.63rem;
+  height: 100%;
+  width: 100%;
   border-radius: 3.125rem;
 }
 
@@ -1339,6 +1355,26 @@ header address a {
 
 .input-error {
   border-color: #e01f3d;
+}
+
+.review_clicker {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.review .clicker .users {
+  height: 74px;
+  width: 74px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 0.38rem;
+}
+@media screen and (max-width: 480px) {
+  .review .clicker .users {
+    height: 64px;
+    width: 64px;
+  }
 }
 
 .edge-delivery {
