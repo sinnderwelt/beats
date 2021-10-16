@@ -517,6 +517,29 @@
                 </div>
             </div>
         </section>
+        <section class="edge-work">
+            <div class="container">
+                <h2>Как мы работаем</h2>
+                <div class="work">
+                    <div class="player">
+                        <div class="player_wrapper">
+                            <div id="yt-player" class="player_elem"></div>
+                            <div class="player_splash"></div>
+                        </div>
+                        <div class="player_controls">
+                            <button class="player_start"></button>
+                            <div class="player_playback">
+                                <button class="player_playback-button"></button>
+                            </div>
+                            <div class="player_duration">
+                                <span class="player_duration-completed">0:00</span>
+                                <span class="player_duration-estimate">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="edge-delivery"> 
             <div class="container container-center">
                 <div class="delivery">
@@ -605,11 +628,7 @@
             </div>
         </section>
         <section class="edge-maps"> 
-            <div class="container">
-                <div class="maps">
-                    
-                </div>
-            </div>
+                <div id="map"></div>
             <footer>
                 <div class="footer-content">
                     <address>Москва, ул.Новый Арбат, д.31/12</address>
@@ -663,5 +682,10 @@
     <script src="./js/modal.js"></script>
     <script src="./js/slider-clicker.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./js/player.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script src="./js/map.js"></script>
 </body>
 </html>

@@ -1,8 +1,11 @@
 .edge-maps {
     position: relative;
-    background: url(../assets/images/map.png) no-repeat;
     background-position: center;
     max-height: 100%;
     width: auto;
     background-size: cover;
 } 
+#map {
+    height: 100%;
+    width: 100%;
+}

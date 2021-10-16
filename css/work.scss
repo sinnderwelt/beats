@@ -1,0 +1,94 @@
+.edge-work {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 48px;
+        color: $black;
+        text-transform: uppercase;
+        padding-bottom: 44px;
+    }
+}
+
+.player_playback {
+    position: relative;
+    width: 442px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: #333;
+    }
+}
+
+.player_controls {
+    position: relative;
+    top: -81px;
+    left: 57px;
+
+    .player_start {
+        padding: 0;
+        border: 0;
+        font: inherit;
+        color: inherit;
+        background: transparent;
+        cursor: pointer;
+        width: 11px;
+        height: 16px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 9;
+            left: -36px;
+            width: 0;
+            height: 0;
+            padding: 0;
+            border-top: 9px solid transparent;
+            border-left: 17px solid red;
+            border-bottom: 9px solid transparent;
+        }
+    }
+}
+
+.player_splash {
+    top: -39px;
+    position: relative;
+    height: 35px;
+    background-color: black;
+}
+
+.player_playback-button {
+    position: absolute;
+    padding: 0;
+    top: -6.5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    background: #e01f3d;
+    cursor: pointer;
+}
+
+.player_duration {
+    display: inline;
+    top: -8px;
+    position: relative;
+    color: #fff;
+    right: -476px;
+    width: 50px;
+    height: 50px;
+}
