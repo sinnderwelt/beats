@@ -13,6 +13,10 @@ html {
   }
 }
 
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
 body {
   font-family: "Play", sans-serif;
 }
@@ -22,9 +26,20 @@ body.close {
 }
 
 .wrapper {
+  position: relative;
   margin: 0 auto;
-  min-width: 0rem;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 section {
@@ -231,7 +246,6 @@ header address a {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 35px;
   background: url("../assets/images/headphone.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1157,11 +1171,23 @@ header address a {
   color: #fff;
   background: url(../assets/images/baba.png) no-repeat;
   background-size: cover;
+  background-position: right bottom;
 }
 .edge-color .color-header {
   position: absolute;
   left: 84px;
   top: 115px;
+}
+@media screen and (max-width: 768px) {
+  .edge-color .color-header {
+    left: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .edge-color .color-header {
+    font-size: 50px;
+    left: 5px;
+  }
 }
 .edge-color .color-menu {
   position: absolute;
@@ -1182,6 +1208,11 @@ header address a {
   position: relative;
   width: 100px;
 }
+@media screen and (max-width: 480px) {
+  .edge-color .color-menu .color-menu_item .color-menu_title {
+    width: 90px;
+  }
+}
 .edge-color .color-menu .color-menu_item .color-menu_title .color-menu_text {
   width: 102px;
   height: 100%;
@@ -1191,6 +1222,11 @@ header address a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .edge-color .color-menu .color-menu_item .color-menu_title .color-menu_text {
+    width: 90px;
+  }
 }
 .edge-color .color-menu .color-menu_item .color-menu_title .color-menu_text .color-menu_name {
   position: absolute;
@@ -1224,6 +1260,10 @@ header address a {
 .edge-color .color-menu .color-menu_item .color-menu_content .color-menu_container {
   padding: 38px;
   height: 100%;
+  font-size: 16px;
+  width: 400;
+  color: #fff;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 .edge-review {

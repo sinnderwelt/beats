@@ -11,6 +11,8 @@
       font-size: rem(12px);
     }
   }
+
+  html::-webkit-scrollbar {width:0px;}
   
   body {
     font-family: 'Play', sans-serif;
@@ -21,9 +23,17 @@
   }
   
   .wrapper {
+    position: relative;
     margin: 0 auto;
-    min-width: rem(0px);
+    width: 100%;
+    height: 100%;
     overflow: hidden;
+  }
+
+  .maincontent {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform; 
   }
   
   section {
@@ -196,7 +206,6 @@
       content: '';
       display: inline-block;
       position: absolute;
-      top: 35px;
       background: url('../assets/images/headphone.png');
       background-repeat: no-repeat;
       background-size: contain;
