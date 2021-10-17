@@ -1152,6 +1152,80 @@ header address a {
   padding-bottom: 4px;
 }
 
+.edge-color {
+  position: relative;
+  color: #fff;
+  background: url(../assets/images/baba.png) no-repeat;
+  background-size: cover;
+}
+.edge-color .color-header {
+  position: absolute;
+  left: 84px;
+  top: 115px;
+}
+.edge-color .color-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.edge-color .color-menu .color-menu_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.edge-color .color-menu .color-menu_item .color-menu_title {
+  position: relative;
+  width: 100px;
+}
+.edge-color .color-menu .color-menu_item .color-menu_title .color-menu_text {
+  width: 102px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.edge-color .color-menu .color-menu_item .color-menu_title .color-menu_text .color-menu_name {
+  position: absolute;
+  width: 600px;
+  color: #fff;
+  font-weight: 700;
+  left: 25%;
+  font-size: 36px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left top 0;
+          transform-origin: left top 0;
+  bottom: 0;
+}
+.edge-color .color-menu .color-menu_item .color-menu_title .gray-child {
+  background-color: #999;
+}
+.edge-color .color-menu .color-menu_item .color-menu_title .black-child {
+  background-color: #151515;
+}
+.edge-color .color-menu .color-menu_item .color-menu_title .red-child {
+  background-color: #e01f3c;
+}
+.edge-color .color-menu .color-menu_item .color-menu_content {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  background: #333537;
+  opacity: 80%;
+}
+.edge-color .color-menu .color-menu_item .color-menu_content .color-menu_container {
+  padding: 38px;
+  height: 100%;
+}
+
 .edge-review {
   position: relative;
 }
