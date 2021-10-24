@@ -12,12 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet"> <!-- font Alegreya+Sans -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="main.min.css">
     <link href="./css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <nav class="point">
+        <ul>
+            <li class="fixed-menu_item fixed-menu_active"><a class="fixed-menu_link" href="" data-scroll-to="advantage"></a></li>
+            <li class="fixed-menu_item"><a class="fixed-menu_link" href="" data-scroll-to="buying"></a></li>
+            <li class="fixed-menu_item"><a class="fixed-menu_link" href="" data-scroll-to="team"></a></li>
+            <li class="fixed-menu_item"><a class="fixed-menu_link" href="" data-scroll-to="color"></a></li>
+            <li class="fixed-menu_item"><a class="fixed-menu_link" href="" data-scroll-to="review"></a></li>
+            <li class="fixed-menu_item"><a class="fixed-menu_link" href="" data-scroll-to="work"></a></li>
+            <li class="fixed-menu_item"><a class="fixed-menu_link" href="" data-scroll-to="maps"></a></li>
+        </ul>
+    </nav>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="edge-header"> 
+            <section data-sidemenu-theme="black" data-section-id="header" class="edge-header"> 
                 <div class="container container_header">
                     <header>
                         <div>
@@ -28,13 +40,13 @@
                         <div>
                             <nav>       
                                 <ul>
-                                    <li><a href="/">О нас</a></li>
-                                    <li><a href="#">Наушники</a></li>
-                                    <li><a href="#">Команда</a></li>
-                                    <li><a href="#">Цвета</a></li>
-                                    <li><a href="#">Отзывы</a></li>
-                                    <li><a href="#">Как мы работаем</a></li>
-                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="/" data-scroll-to="advantage">О нас</a></li>
+                                    <li><a href="#" data-scroll-to="buying">Наушники</a><li>
+                                    <li><a href="#" data-scroll-to="team">Команда</a></li>
+                                    <li><a href="#" data-scroll-to="color">Цвета</a></li>
+                                    <li><a href="#" data-scroll-to="review">Отзывы</a></li>
+                                    <li><a href="#" data-scroll-to="work">Как мы работаем</a></li>
+                                    <li><a href="#" data-scroll-to="maps">Контакты</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -56,13 +68,13 @@
                                     </div>
                                     <nav>
                                         <ul>
-                                            <li><a href="/">О нас</a></li>
-                                            <li><a href="#">Наушники</a></li>
-                                            <li><a href="#">Команда</a></li>
-                                            <li><a href="#">Цвета</a></li>
-                                            <li><a href="#">Отзывы</a></li>
-                                            <li><a href="#">Как мы работаем</a></li>
-                                            <li><a href="#">Контакты</a></li> 
+                                            <li><a href="/" data-scroll-to="advantage">О нас</a></li>
+                                            <li><a href="#" data-scroll-to="buying">Наушники</a><li>
+                                            <li><a href="#" data-scroll-to="team">Команда</a></li>
+                                            <li><a href="#" data-scroll-to="color">Цвета</a></li>
+                                            <li><a href="#" data-scroll-to="review">Отзывы</a></li>
+                                            <li><a href="#" data-scroll-to="work">Как мы работаем</a></li>
+                                            <li><a href="#" data-scroll-to="maps">Контакты</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -79,7 +91,7 @@
                             <h1>Беспроводные наушники Beats Solo 3</h1>
                             <p>Встречайте новую версию наушников из линейки Powerbeats.</p>
                             <div>
-                            <a href="#">ЗАКАЗАТЬ</a>
+                            <a href="#" data-scroll-to="delivery">ЗАКАЗАТЬ</a>
                             </div>
                         </div>
                     </div>
@@ -95,22 +107,8 @@
                         </div>
                     </div>
                 </div>
-                <nav class="point">
-                    <ul>
-                        <li><a class="active" href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </nav>
-
             </section>
-            <section class="edge-advantage"> 
+            <section data-sidemenu-theme="black" data-section-id="advantage" class="edge-advantage"> 
                 <div class="container container-center">
                     <div class="advantage">
                         <div class="advantage-header">
@@ -159,7 +157,7 @@
                     </div>
                 </div>
             </section>
-            <section class="edge-buying"> 
+            <section data-sidemenu-theme="black" data-section-id="buying" class="edge-buying"> 
                 <div class="arrows_prev">
                     <a href="">
                         <svg class="buying-sprite">
@@ -246,7 +244,7 @@
                                             </li>
                                             <li>
                                                 <div>
-                                                    <a href="#">ЗАКАЗАТЬ</a>
+                                                    <a href="#" data-scroll-to="delivery">ЗАКАЗАТЬ</a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -329,7 +327,7 @@
                                             </li>
                                             <li class="buying-link">
                                                 <div>
-                                                    <a href="#">ЗАКАЗАТЬ</a>
+                                                    <a href="#" data-scroll-to="delivery">ЗАКАЗАТЬ</a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -347,7 +345,7 @@
                     </a>
                 </div>
             </section>
-            <section> 
+            <section data-sidemenu-theme="black" data-section-id="team"> 
                 <div class="container">
                     <div class="team">
                         <h1>команда</h1>
@@ -462,7 +460,7 @@
                     </div>
                 </div>
             </section>
-            <section class="edge-color">
+            <section data-sidemenu-theme="white" data-section-id="color" class="edge-color">
                 <h1 class="color-header">Цвета</h1>
                 <ul class="color-menu">
                     <li class="color-menu_item">
@@ -497,7 +495,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="edge-review"> 
+            <section data-sidemenu-theme="black" data-section-id="review" class="edge-review"> 
                 <div class="container container-center">
                     <div class="review">
                         <h1>отзывы</h1>
@@ -553,7 +551,7 @@
                     </div>
                 </div>
             </section>
-            <section class="edge-work">
+            <section data-sidemenu-theme="black" data-section-id="work" class="edge-work">
                 <div class="container">
                     <h2>Как мы работаем</h2>
                     <div class="work">
@@ -576,7 +574,7 @@
                     </div>
                 </div>
             </section>
-            <section class="edge-delivery"> 
+            <section data-sidemenu-theme="white" data-section-id="delivery" class="edge-delivery"> 
                 <div class="container container-center">
                     <div class="delivery">
                         <h1>закажите доставку</h1>
@@ -663,7 +661,7 @@
                     </div>
                 </div>
             </section>
-            <section class="edge-maps"> 
+            <section data-sidemenu-theme="black" data-section-id="maps" class="edge-maps"> 
                     <div id="map"></div>
                 <footer>
                     <div class="footer-content">
@@ -714,6 +712,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="main.min.js"></script>
     <script src="./js/burger.js"></script>
     <script src="./js/ops.js"></script>
     <script src="./js/color.js"></script>
@@ -725,6 +724,6 @@
     <script src="./js/player.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
-    <script src="./js/map.js"></script>
+    <script src="./js/map.js"></script>  
 </body>
 </html>

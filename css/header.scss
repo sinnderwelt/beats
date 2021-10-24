@@ -1,7 +1,48 @@
   $baseFontSize: 16px;
+
+  * {
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+h1 {
+    font-weight: 700;
+    font-size: 72px;
+}
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+h3 {
+    font-weight: 700;
+    font-size: 24px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
   
   html {
     font-size: rem(16px);
+    height: 100%;
 
     @include tablets {
       font-size: rem(13px);
@@ -16,6 +57,7 @@
   
   body {
     font-family: 'Play', sans-serif;
+    height: 100%;
     &.close {
       height: 100vh;
       overflow: hidden;
@@ -280,10 +322,11 @@
     }
   }
   .point {
-    position: relative;
+    position: fixed;
     margin-left: rem(15px);
     margin-top: rem(300px);
     z-index: $z-point;
+    right: 15px;
 
     @include tablets {
       display: none;
@@ -319,8 +362,14 @@
     }
   }
 
+  .fixed-menu-shadowed {
+    background: #fff;
+  }
 
-
+.fixed-menu_active {
+  border: $red 1px solid;
+  border-radius: 50%;
+}
 
 
   // @media (max-width: 768px) {

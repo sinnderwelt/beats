@@ -1,6 +1,56 @@
 @import url("../css/normalize.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 72px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   font-size: 1rem;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   html {
@@ -19,6 +69,7 @@ html::-webkit-scrollbar {
 
 body {
   font-family: "Play", sans-serif;
+  height: 100%;
 }
 body.close {
   height: 100vh;
@@ -346,10 +397,11 @@ header address a {
 }
 
 .point {
-  position: relative;
+  position: fixed;
   margin-left: 0.9375rem;
   margin-top: 18.75rem;
   z-index: 100;
+  right: 15px;
 }
 @media screen and (max-width: 768px) {
   .point {
@@ -381,6 +433,15 @@ header address a {
 }
 .point li a.active {
   border-color: #e01f3d;
+}
+
+.fixed-menu-shadowed {
+  background: #fff;
+}
+
+.fixed-menu_active {
+  border: #e01f3d 1px solid;
+  border-radius: 50%;
 }
 
 .hamburger {
